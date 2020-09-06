@@ -1,18 +1,23 @@
-div{
+.titulo{
 
-    background:black;
-
-}
-#arriba{
-
-    background: rgb(248, 115, 5);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: -1%;
+    height: 100%;
+    box-align: center;
+    background:rgba(0, 0, 0, 0.918);
 
 }
+body{
 
+    background: wheat;
+
+}
+.letras{
+
+    color: rgba(15, 15, 70, 0.904);
+
+}
 .amarillo{
 
-    color: yellow;
+    color: black;
 
 }
