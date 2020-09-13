@@ -1,15 +1,7 @@
-.titulo{
+*{
 
-    margin: -1%;
-    height: 100%;
-    box-align: center;
-    background:rgba(0, 0, 0, 0.918);
-
-}
-h2{
-
-    padding: 2%;
-    color: coral;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -18,13 +10,34 @@ body{
     background: wheat;
 
 }
+
+header{
+
+    /* margin: -1%; */
+    /* height: 100%; */
+    box-align: center;
+    background: #30475e;
+
+}
+
+h1{
+
+    text-align: center;
+
+}
+
+nav{
+
+    text-align: right;
+
+}
 .letras{
 
-    color: rgba(15, 15, 70, 0.904);
+    color: #7e8a97;
 
 }
 .amarillo{
 
-    color: black;
+    color: #7e8a97;
 
 }
