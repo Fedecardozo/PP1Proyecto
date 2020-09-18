@@ -11,8 +11,8 @@ header{
     flex-flow: row nowrap;
     justify-content: center;
     background-color: #090845;
-    /* align-items: center;
-    overflow: hidden; */
+    /* align-items: center;*/
+    overflow: hidden;
 
 }
 div.col-triangulo{
@@ -33,11 +33,14 @@ div.col-nav{
     width: 60%;
     flex: 0 1 auto;
     color: cornsilk;
+    margin-top: 2px;
 
 }
 div.col-nav nav ul li{
 
     display: block;
+    font-size: 18px;
+    padding: 2px;
 
 }
 /* header h1{
