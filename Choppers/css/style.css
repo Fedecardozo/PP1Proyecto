@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #090845;
+    /* align-items: center;
+    overflow: hidden; */
+
+}
+div.col-triangulo{
+
+    width: 40%;
+    flex: 0 1 auto;
+
+}
+div.col-img{
+
+    width: 100%;
+    flex: 2 1 auto;
+
+}
+div.col-nav{
+
+    text-align: center;
+    width: 60%;
+    flex: 0 1 auto;
+    color: cornsilk;
+
+}
+div.col-nav nav ul li{
+
+    display: block;
+
+}
+/* header h1{
+
+    background-color: burlywood;
+    padding: 2%;
+
+} */
