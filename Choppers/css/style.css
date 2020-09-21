@@ -4,6 +4,11 @@
     box-sizing: border-box;
 
 }
+body{
+
+    background-color: black;
+
+}
 
 header{
 
@@ -11,8 +16,7 @@ header{
     flex-flow: row nowrap;
     justify-content: center;
     background-color: #090845;
-    /* align-items: center;*/
-    overflow: hidden;
+    /* align-items: center;*/ 
 
 }
 div.col-triangulo{
@@ -43,17 +47,48 @@ div.col-nav nav ul li{
     padding: 2px;
 
 }
-section article.social{
+aside{
 
+    /* background-color: rgba(49, 47, 47, 0.582); */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    
+}
+a{
+
+    border-radius: 100%;
+    font-size: 35px;
+    display: block;
+    padding: 8px 13px;
+    margin: 5px;
+    background-color: rgba(109, 109, 109, 0.322);
+    color: cornsilk;
+
+}
+a:hover{
+
+    background-color: crimson;
+    padding: 8px 13px;
+
+}
+
+/* section article.social{
+
+    background-color: crimson;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: flex-end;
-    position: fixed;
-    left: 97%;
+    /* position: fixed; */
+    /* left: 97%; */
+    /* position: fixed;
+    right: 0;
+    bottom: 0;
     
-}
-a{
+}*/
+/* a{
 
     border-radius: 120%;
     font-size: 2rem;
@@ -62,14 +97,9 @@ a{
     background-color: rgba(49, 47, 47, 0.582);
     color: cornsilk;
     flex: 0 1 auto;
+    border: solid cornsilk 2px;
 
-}
-a:hover{
-
-    background-color: crimson;
-
-}
-
+}*/
 
 /* header h1{
 
