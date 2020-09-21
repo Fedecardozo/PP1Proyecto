@@ -43,6 +43,21 @@ div.col-nav nav ul li{
     padding: 2px;
 
 }
+span{
+
+    background-color: rgb(85, 83, 83);
+    border-radius: 5px;
+    display: block;
+    position: fixed;
+    left: 90%;
+    margin: auto;
+}
+i{
+    color: cornsilk;
+    height: 1rem;
+    width: 1rem;
+
+}
 /* header h1{
 
     background-color: burlywood;
