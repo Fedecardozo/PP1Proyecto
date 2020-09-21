@@ -43,21 +43,34 @@ div.col-nav nav ul li{
     padding: 2px;
 
 }
-span{
+section article.social{
 
-    background-color: rgb(85, 83, 83);
-    border-radius: 5px;
-    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: fixed;
-    left: 90%;
-    margin: auto;
+    left: 97%;
+    
 }
-i{
+a{
+
+    border-radius: 120%;
+    font-size: 2rem;
+    padding: 70% 90%;
+    margin: 5px;
+    background-color: rgba(49, 47, 47, 0.582);
     color: cornsilk;
-    height: 1rem;
-    width: 1rem;
+    flex: 0 1 auto;
 
 }
+a:hover{
+
+    background-color: crimson;
+
+}
+
+
 /* header h1{
 
     background-color: burlywood;
