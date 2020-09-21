@@ -1,16 +1,24 @@
+/*GLOBALES*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
+body{
+
+    background-color: #090845;
+
+}
+/*******FIN DE GLOBALES********/
+/* Comienzo del encabezado */
 header{
 
     display: flex;
     flex-flow: row nowrap;
     /* justify-content: center; */
     background-color: #090845;
-    /* align-items: center;*/ 
+    /* align-items: center;  */
 
 }
 div.col-triangulo{
@@ -30,22 +38,45 @@ img{
     height: 100%;
 
 }
+div.col-gif{
+
+    width: 100%;
+    color: cornsilk;
+    background-color: darkred;
+    flex: 0 1 auto;
+    text-align: center;
+}
+label{
+    background-color: darksalmon;
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+    padding: 10px 0 10px 0;
+    /* margin: auto; */
+}
+/* FIN DEL ENCABEZADO (HEADER) */
+
+/* INICIO DEL MENU (NAV) */
 div.col-nav{
 
     text-align: center;
     width: 100%;
-    flex: 0 1 auto;
     color: cornsilk;
     margin-top: 2px;
 
 }
 div.col-nav nav ul li{
 
-    display: block;
+    display: inline-block;
     font-size: 18px;
     padding: 2px;
 
 }
+/* FIN DEL NAV */
+
+/* ACA DARIA COMIENZO AL SECTION */
+
+/* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
 aside{
 
     /* background-color: rgba(49, 47, 47, 0.582); */
@@ -72,7 +103,11 @@ a:hover{
     padding: 8px 13px;
 
 }
+/* FIN DEL ASIDE */
 
+/* ACA DARIA COMIENZO AL FOOTER */
+
+/* DESDE ACA TODO LO QUE NO ME SALIO */
 /* section article.social{
 
     background-color: crimson;
