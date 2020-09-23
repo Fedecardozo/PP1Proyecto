@@ -7,7 +7,7 @@
 }
 body{
 
-    background-color: #090845;
+    background-color: #0b0b1f;
 
 }
 /*******FIN DE GLOBALES********/
@@ -16,6 +16,7 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
+    height: 78px;
     /* justify-content: center; */
     background-color: #090845;
     /* align-items: center;  */
@@ -41,19 +42,23 @@ img{
 div.col-gif{
 
     width: 100%;
-    color: cornsilk;
-    background-color: darkred;
     flex: 0 1 auto;
-    text-align: center;
+    text-align: end;
 }
-label{
+div.col-gif img{
+
+    display: inline-block;
+    height: 250%;
+
+}
+/* label{
     background-color: darksalmon;
-    /* width: 100%; */
-    /* height: 100%; */
+    /* width: 100%;
+    /* height: 100%;
     display: block;
     padding: 10px 0 10px 0;
-    /* margin: auto; */
-}
+    /* margin: auto;
+} */
 /* FIN DEL ENCABEZADO (HEADER) */
 
 /* INICIO DEL MENU (NAV) */
