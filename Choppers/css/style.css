@@ -20,6 +20,27 @@ div.logo-gif img{
 
     /* display: block; */
     height: 10rem;
+    animation: rot 12s infinite;
+    
+}
+@keyframes rot{
+    0%{
+        transform: initial;
+    }
+    25%{
+
+        transform: initial;
+
+    }
+    50%{
+
+        transform: initial;
+
+    }
+    75%{
+        transition: 4s;
+        transform: rotateY(360deg);
+    }
 
 }
 /*******FIN DE GLOBALES********/
@@ -94,17 +115,20 @@ a{
     margin: 5px;
     background-color: rgba(109, 109, 109, 0.322);
     color: cornsilk;
-    transition-timing-function: ease-in-out;
-    
+    transition: 1.5s;
+    transform: rotateY(360deg);
 
 }
 a:hover{
 
     background-color: crimson;
-    padding: 13px 14px 9px 14px;
-    font-size: 1.7rem;
+    transform: scale(1.2);
+    
+    /* padding: 13px 14px 9px 14px;
+    font-size: 1.7rem; */
 
 }
+
 /* FIN DEL ASIDE */
 
 /* ACA DARIA COMIENZO AL FOOTER */
