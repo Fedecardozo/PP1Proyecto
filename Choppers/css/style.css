@@ -10,13 +10,25 @@ body{
     background-color: #0b0b1f;
 
 }
+div.logo-gif{
+
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+div.logo-gif img{
+
+    /* display: block; */
+    height: 10rem;
+
+}
 /*******FIN DE GLOBALES********/
 /* Comienzo del encabezado */
 header{
 
     display: flex;
     flex-flow: row nowrap;
-    height: 78px;
+    height: 5rem;
     /* justify-content: center; */
     background-color: #090845;
     /* align-items: center;  */
@@ -39,26 +51,7 @@ img{
     height: 100%;
 
 }
-div.col-gif{
 
-    width: 100%;
-    flex: 0 1 auto;
-    text-align: end;
-}
-div.col-gif img{
-
-    display: inline-block;
-    height: 250%;
-
-}
-/* label{
-    background-color: darksalmon;
-    /* width: 100%;
-    /* height: 100%;
-    display: block;
-    padding: 10px 0 10px 0;
-    /* margin: auto;
-} */
 /* FIN DEL ENCABEZADO (HEADER) */
 
 /* INICIO DEL MENU (NAV) */
@@ -73,13 +66,14 @@ div.col-nav{
 div.col-nav nav ul li{
 
     display: inline-block;
-    font-size: 18px;
-    padding: 2px;
+    font-size: 1.1rem;
+    padding: 3px;
 
 }
 /* FIN DEL NAV */
 
 /* ACA DARIA COMIENZO AL SECTION */
+
 
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
 aside{
@@ -94,7 +88,7 @@ aside{
 a{
 
     border-radius: 100%;
-    font-size: 35px;
+    font-size: 2.2rem;
     display: block;
     padding: 8px 13px;
     margin: 5px;
@@ -105,7 +99,9 @@ a{
 a:hover{
 
     background-color: crimson;
-    padding: 8px 13px;
+    padding: 7px 12px;
+    font-size: 2.1rem;
+    transition: 0.5s ease 0.3s;
 
 }
 /* FIN DEL ASIDE */
@@ -145,4 +141,12 @@ a:hover{
     background-color: burlywood;
     padding: 2%;
 
+} */
+/* label{
+    background-color: darksalmon;
+    /* width: 100%;
+    /* height: 100%;
+    display: block;
+    padding: 10px 0 10px 0;
+    /* margin: auto;
 } */
