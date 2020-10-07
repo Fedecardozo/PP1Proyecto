@@ -94,12 +94,47 @@ div.col-nav nav ul li{
 /* FIN DEL NAV */
 
 /* ACA DARIA COMIENZO AL SECTION */
+form{
+
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: darkmagenta;
+    align-items: center;
+    text-align: center;
+
+}
+/* div.cont-form{
+
+    display: flex;
+    background-color: deeppink;
+    justify-content: center;
+    
+
+} */
 div.formulario{
 
     background-color: darkgray;
+    flex: 1 1 auto;
 
 }
+button.mas{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 1rem 0 0;
+    position: relative;
+    /* right: 1; */
+    border: none;
+    font-size: 2rem;
+}
+button.mas:hover{
 
+    cursor: pointer;
+    background-color: deepskyblue;
+
+}
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
 aside{
 

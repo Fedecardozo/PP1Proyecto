@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -49,8 +51,31 @@
 
     </section>
     <!-- Aca es donde se arma el pedido -->
-    <div class="formulario">
-        <form action="">
+    <form action="">
+        <div class="formulario">
+            <label for="cantCarne">Empanadas de carne</label><br>
+            <input type="number" id="cantCarne" placeholder="Cantidad.."><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <label for="cantPollo">Empanadas de pollo</label><br>
+            <input type="number" id="cantPollo" placeholder="Cantidad.."><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <label for="cantJyQ">Empanadas jamon y queso</label><br>
+            <input type="number" id="cantJyQ" placeholder="Cantidad.."><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <input type="submit" value="Finalizar">
+            <input type="reset" value="Reiniciar">
+        </div>
+        <button class="mas" onclick="sumar()">+</button>
+        <div class="formulario" id="form2" hidden>
             <label for="cantCarne">Empanadas de carne</label><br>
             <input type="number" id="cantCarne"><br>
             <label for="frita">Frita</label>
@@ -71,8 +96,31 @@
             <input type="radio" name="coccion" id="horno"><br>
             <input type="submit" value="Finalizar">
             <input type="reset" value="Reiniciar">
-        </form>
-    </div>
+        </div>
+        <div class="formulario" id="form3" hidden>
+            <label for="cantCarne">Empanadas de carne</label><br>
+            <input type="number" id="cantCarne"><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <label for="cantPollo">Empanadas de pollo</label><br>
+            <input type="number" id="cantPollo"><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <label for="cantJyQ">Empanadas jamon y queso</label><br>
+            <input type="number" id="cantJyQ"><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <input type="submit" value="Finalizar">
+            <input type="reset" value="Reiniciar">
+        </div>
+
+    </form>
 
     <aside class="social">
         <a href="https://www.facebook.com/FedeCardozoCab/" target="_blank"><i class="fab fa-facebook-f"></i></a>
