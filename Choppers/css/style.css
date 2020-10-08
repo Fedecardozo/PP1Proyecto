@@ -9,8 +9,8 @@
 }
 body{
 
-    /* background-color: #f5f5f5; */
     background-color: #090845;
+    /* background-color: #f5f5f5; */
 
 }
 div.logo-gif{
@@ -124,6 +124,7 @@ div.cont-formulario{
     border-radius: 10px;
     text-align: center;
     color: #212529;
+    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.28);
     /* flex: 1 1 auto; */
 
 }
@@ -134,6 +135,11 @@ div.cont-head{
 div.cont-body{
 
     padding: 1rem;
+
+}
+div.separador{
+
+    margin-bottom: 2px;
 
 }
 
