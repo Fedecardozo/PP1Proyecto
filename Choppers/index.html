@@ -52,78 +52,92 @@
     </section>
     <!-- Aca es donde se arma el pedido -->
     <form action="">
-        <div class="formulario">
-            <label for="cantCarne">Empanadas de carne</label><br>
-            <input type="number" id="cantCarne" placeholder="Cantidad.."><br>
-            <label for="frita">Frita</label>
-            <input type="radio" name="coccion" id="frita">
-            <label for="horno">Horno</label>
-            <input type="radio" name="coccion" id="horno"><br>
-            <label for="cantPollo">Empanadas de pollo</label><br>
-            <input type="number" id="cantPollo" placeholder="Cantidad.."><br>
-            <label for="frita">Frita</label>
-            <input type="radio" name="coccion" id="frita">
-            <label for="horno">Horno</label>
-            <input type="radio" name="coccion" id="horno"><br>
-            <label for="cantJyQ">Empanadas jamon y queso</label><br>
-            <input type="number" id="cantJyQ" placeholder="Cantidad.."><br>
-            <label for="frita">Frita</label>
-            <input type="radio" name="coccion" id="frita">
-            <label for="horno">Horno</label>
-            <input type="radio" name="coccion" id="horno"><br>
-            <input type="submit" value="Finalizar">
-            <input type="reset" value="Reiniciar">
+        <div class="cont-formulario">
+            <div class="cont-head">
+                <h2>Empandas</h2>
+            </div>
+            <hr>
+            <div class="cont-body">
+                <label for="cantCarne">Empanadas de carne</label><br>
+                <input type="number" id="cantCarne" placeholder="12"><br>
+                <label for="frita">Frita</label>
+                <input type="radio" name="coccion" id="frita">
+                <label for="horno">Horno</label>
+                <input type="radio" name="coccion" id="horno"><br>
+                <label for="cantPollo">Empanadas de pollo</label><br>
+                <input type="number" id="cantPollo" placeholder="12"><br>
+                <label for="frita">Frita</label>
+                <input type="radio" name="coccion" id="frita">
+                <label for="horno">Horno</label>
+                <input type="radio" name="coccion" id="horno"><br>
+                <label for="cantJyQ">Empanadas jamon y queso</label><br>
+                <input type="number" id="cantJyQ" placeholder="12"><br>
+                <label for="frita">Frita</label>
+                <input type="radio" name="coccion" id="frita">
+                <label for="horno">Horno</label>
+                <input type="radio" name="coccion" id="horno"><br>
+                <input type="button" value="Finalizar" class="sub-fin">
+                <input type="reset" value="Reiniciar" class="sub-lim">
+                <button class="mas" onclick="sumar()">+</button>
+            </div>    
         </div>
         <div class="formulario" id="form2" hidden>
+            <div class="cont-h">
+                <h2>Empandas</h2>
+                <hr>
+            </div>
             <label for="cantCarne">Empanadas de carne</label><br>
-            <input type="number" id="cantCarne"><br>
+            <input type="number" id="cantCarne" placeholder="12"><br>
             <label for="frita">Frita</label>
             <input type="radio" name="coccion" id="frita">
             <label for="horno">Horno</label>
             <input type="radio" name="coccion" id="horno"><br>
             <label for="cantPollo">Empanadas de pollo</label><br>
-            <input type="number" id="cantPollo"><br>
+            <input type="number" id="cantPollo" placeholder="12"><br>
             <label for="frita">Frita</label>
             <input type="radio" name="coccion" id="frita">
             <label for="horno">Horno</label>
             <input type="radio" name="coccion" id="horno"><br>
             <label for="cantJyQ">Empanadas jamon y queso</label><br>
-            <input type="number" id="cantJyQ"><br>
+            <input type="number" id="cantJyQ" placeholder="12"><br>
             <label for="frita">Frita</label>
             <input type="radio" name="coccion" id="frita">
             <label for="horno">Horno</label>
             <input type="radio" name="coccion" id="horno"><br>
-            <input type="submit" value="Finalizar">
-            <input type="reset" value="Reiniciar">
-        </div>
-        <div class="formulario" id="form3" >
-            <label for="cantCarne">Empanadas de carne</label><br>
-            <input type="number" id="cantCarne"><br>
-            <label for="frita">Frita</label>
-            <input type="radio" name="coccion" id="frita">
-            <label for="horno">Horno</label>
-            <input type="radio" name="coccion" id="horno"><br>
-            <label for="cantPollo">Empanadas de pollo</label><br>
-            <input type="number" id="cantPollo"><br>
-            <label for="frita">Frita</label>
-            <input type="radio" name="coccion" id="frita">
-            <label for="horno">Horno</label>
-            <input type="radio" name="coccion" id="horno"><br>
-            <label for="cantJyQ">Empanadas jamon y queso</label><br>
-            <input type="number" id="cantJyQ"><br>
-            <label for="frita">Frita</label>
-            <input type="radio" name="coccion" id="frita">
-            <label for="horno">Horno</label>
-            <input type="radio" name="coccion" id="horno"><br>
-            <input type="submit" value="Finalizar">
-            <input type="reset" value="Reiniciar">
-        </div>
-        <div class="cont-btn">
+            <input type="button" value="Finalizar" class="sub-fin">
+            <input type="reset" value="Reiniciar" class="sub-lim">
             <button class="mas" onclick="sumar()">+</button>
         </div>
-
+        <div class="formulario" id="form2" hidden>
+            <div class="cont-h">
+                <h2>Empandas</h2>
+                <hr>
+            </div>
+            <label for="cantCarne">Empanadas de carne</label><br>
+            <input type="number" id="cantCarne" placeholder="12"><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <label for="cantPollo">Empanadas de pollo</label><br>
+            <input type="number" id="cantPollo" placeholder="12"><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <label for="cantJyQ">Empanadas jamon y queso</label><br>
+            <input type="number" id="cantJyQ" placeholder="12"><br>
+            <label for="frita">Frita</label>
+            <input type="radio" name="coccion" id="frita">
+            <label for="horno">Horno</label>
+            <input type="radio" name="coccion" id="horno"><br>
+            <input type="button" value="Finalizar" class="sub-fin">
+            <input type="reset" value="Reiniciar" class="sub-lim">
+            <button class="mas" onclick="sumar()">+</button>
+        </div>
+        
     </form>
-
+    
     <aside class="social">
         <a href="https://www.facebook.com/FedeCardozoCab/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://github.com/Fedecardozo" target="_blank"><i class="fab fa-whatsapp"></i></a>

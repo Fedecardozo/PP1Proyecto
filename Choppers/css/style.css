@@ -1,13 +1,16 @@
 /*GLOBALES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 
 }
 body{
 
-    background-color: #0b0b1f;
+    /* background-color: #f5f5f5; */
+    background-color: #090845;
 
 }
 div.logo-gif{
@@ -98,7 +101,7 @@ form{
 
     
     /* flex-flow: row nowrap; */
-    background-color: darkmagenta;
+    /* background-color: darkmagenta; */
     /* align-items: center; */
     /*text-align: center; */
 
@@ -111,18 +114,46 @@ form{
     
 
 } */
-div.formulario{
+div.cont-formulario{
 
     display: inline-block;
-    background-color: darkgray;
+    margin: 2rem 2rem;
+    background-color:  #f3f3f3;
+    /* padding: 0 2rem 2rem 2rem; */
+    border: 2px solid  rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    text-align: center;
+    color: #212529;
     /* flex: 1 1 auto; */
 
 }
-div.cont-btn{
+div.cont-head{
+    background-color: rgba(0, 0, 0, 0.158);
+    padding: 1rem;
+}
+div.cont-body{
 
-    display: inline-block;
-    background-color: gold;
-    height: 100%;
+    padding: 1rem;
+
+}
+
+/* ***********Estilos a los imputs********** */
+form div.cont-body input[type = number]{
+
+    /* font: 400 20px Arial; */
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 6rem;
+    height: 2.2rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+form div.cont-body label{
+
+    font-size: 1.2rem;
+
 }
 button.mas{
     background-color: dodgerblue;
@@ -130,9 +161,9 @@ button.mas{
     border-radius: 100%;
     width: 3rem;
     height: 3rem;
-    margin: 1rem 1rem 0 0;
+    margin: 1rem 1rem;
     position: relative;
-    right: 0;
+    right: 0;  
     border: none;
     font-size: 2rem;
 }
@@ -140,6 +171,42 @@ button.mas:hover{
 
     cursor: pointer;
     background-color: deepskyblue;
+
+}
+div input.sub-fin {
+    text-decoration: none;
+    background-color: rgb(30, 163, 81);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid lightblue;
+    margin-right: 5px;
+    
+}
+div input.sub-fin:hover{
+
+    cursor: pointer;
+    background-color: rgb(116, 236, 136);
+    color: rgb(15, 15, 15);
+
+}
+div input.sub-lim {
+    text-decoration: none;
+    background-color: rgb(163, 50, 30);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid lightblue;
+    
+    
+}
+div input.sub-lim:hover{
+
+    cursor: pointer;
+    background-color: rgb(214, 120, 191);
+    color: rgb(15, 15, 15);
 
 }
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */

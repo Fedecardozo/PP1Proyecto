@@ -1,6 +1,8 @@
+var i = 0;
 function sumar(){
-
-    var formulario = document.getElementById("form2");
-    formulario.hidden = false;
+    i++;
+    var mas = document.getElementById("cantCarne");
+    mas.value = 0;
+    
 
 }
