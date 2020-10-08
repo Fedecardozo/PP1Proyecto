@@ -96,11 +96,11 @@ div.col-nav nav ul li{
 /* ACA DARIA COMIENZO AL SECTION */
 form{
 
-    display: flex;
-    flex-flow: row nowrap;
+    
+    /* flex-flow: row nowrap; */
     background-color: darkmagenta;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /*text-align: center; */
 
 }
 /* div.cont-form{
@@ -113,9 +113,16 @@ form{
 } */
 div.formulario{
 
+    display: inline-block;
     background-color: darkgray;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
 
+}
+div.cont-btn{
+
+    display: inline-block;
+    background-color: gold;
+    height: 100%;
 }
 button.mas{
     background-color: dodgerblue;
@@ -125,7 +132,7 @@ button.mas{
     height: 3rem;
     margin: 1rem 1rem 0 0;
     position: relative;
-    /* right: 1; */
+    right: 0;
     border: none;
     font-size: 2rem;
 }
@@ -136,7 +143,7 @@ button.mas:hover{
 
 }
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
-aside{
+aside.social{
 
     /* background-color: rgba(49, 47, 47, 0.582); */
     position: fixed;
@@ -145,7 +152,7 @@ aside{
     text-align: center;
     
 }
-a{
+aside.social a{
 
     border-radius: 100%;
     font-size: 1.8rem;
@@ -158,7 +165,7 @@ a{
     transform: rotateY(360deg);
 
 }
-a:hover{
+aside.social a:hover{
 
     background-color: crimson;
     transform: scale(1.2);
