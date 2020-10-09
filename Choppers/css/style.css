@@ -52,23 +52,29 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
+    justify-content: left;
     height: 5rem;
-    /* justify-content: center; */
     background-color: #090845;
-    /* align-items: center;  */
 
 }
-div.col-triangulo{
+div.cont-icon{
 
-    width: 100%;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
+    background-color: tomato;
+    text-align: center;
+
+}
+div.cont-icon i.ico-color{
+
+    font-size: 4rem;
+    margin-top: 4px;
+    color: white;
 
 }
 div.col-img{
 
-    width: 100%;
     flex: 1 1 auto;
-
+    background-color: turquoise;
 }
 img{
 
