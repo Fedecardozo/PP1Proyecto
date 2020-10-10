@@ -52,29 +52,33 @@ header{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: left;
     height: 5rem;
     background-color: #090845;
+    align-items: center;
 
 }
 div.cont-icon{
 
     flex: 1 1 auto;
     background-color: tomato;
+    margin-left: 1rem;
     text-align: center;
+    
+
 
 }
 div.cont-icon i.ico-color{
 
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-top: 4px;
     color: white;
 
 }
 div.col-img{
 
-    flex: 1 1 auto;
+    flex: 3 1 auto;
     background-color: turquoise;
+    text-align: center;
 }
 img{
 
