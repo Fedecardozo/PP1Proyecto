@@ -66,13 +66,22 @@ div.col-icon{
     flex: 1 1 auto;
 
 }
-div.cont-icon i.ico-color, div.cont-icon2 i.ico-color2 {
+/*i.ico-color2 */
+/* i.ico-color */
+div.cont-icon button.btn-menu, div.cont-icon2 button.btn-cliente{
 
     font-size: 1.3rem;
     color: #ccc;
     background-color: crimson;
     border-radius: 0 30% 0 30%;
     padding: 12px;
+    
+}
+div.cont-icon button.btn-menu:hover, div.cont-icon2 button.btn-cliente:hover{
+
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 0.795);
+    color: wheat;
 
 }
 div.col-title{
@@ -199,6 +208,7 @@ button.mas:hover{
 
     cursor: pointer;
     background-color: deepskyblue;
+    color: #ccc
 
 }
 div input.sub-fin {
@@ -215,7 +225,7 @@ div input.sub-fin {
 div input.sub-fin:hover{
 
     cursor: pointer;
-    background-color: rgb(116, 236, 136);
+    background-color: rgb(34, 207, 63);
     color: rgb(15, 15, 15);
 
 }
@@ -233,7 +243,7 @@ div input.sub-lim {
 div input.sub-lim:hover{
 
     cursor: pointer;
-    background-color: rgb(214, 120, 191);
+    background-color: rgb(199, 54, 54);
     color: rgb(15, 15, 15);
 
 }
