@@ -89,7 +89,6 @@ div.col-icon2{
 div.cont-icon2 i.ico-color2{
 
     font-size: 1rem;
-    color: #ccc;
    
 }
 div.cont-icon2 i.ico-color2 span{
@@ -106,7 +105,8 @@ div.col-nav{
     text-align: center;
     width: 100%;
     color: cornsilk;
-    margin-top: 2px;
+    /* margin-top: 2px; */
+    background-color: rgba(109, 109, 109, 0.767);
 
 }
 div.col-nav nav ul li{
@@ -254,19 +254,31 @@ aside.social a{
     display: block;
     padding: 14px 16px 10px 16px;
     margin: 5px;
-    background-color: rgba(109, 109, 109, 0.322);
+    background-color: rgba(109, 109, 109, 0.767);
     color: cornsilk;
-    transition: 1.5s;
-    transform: rotateY(360deg);
+    /* transform: rotateY(360deg); */
+    animation: girar 5s ;
 
 }
+
 aside.social a:hover{
 
+    transition: 2s;
+    transform: scale(1.1);
     background-color: crimson;
-    transform: scale(1.2);
-    
     /* padding: 13px 14px 9px 14px;
     font-size: 1.7rem; */
+
+}
+@keyframes girar{
+    from{
+
+        opacity: 0;
+    }
+    to{
+
+        transform: rotateY(360deg);
+    }
 
 }
 
