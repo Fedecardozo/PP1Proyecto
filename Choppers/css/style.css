@@ -9,8 +9,8 @@
 }
 body{
 
-    background-color: #090845;
-    /* background-color: #f5f5f5; */
+    /* background-color: #090845; */
+    background-color: #f3f3f3;
 
 }
 div.logo-gif{
@@ -53,36 +53,48 @@ header{
     display: flex;
     flex-flow: row nowrap;
     height: 5rem;
-    background-color: #090845;
+    /* background-color: #090845; */
+    background-color: black;
+    justify-content: center;
     align-items: center;
+    /* align-content: center; */
+    text-align: center;
 
 }
-div.cont-icon{
+div.col-icon{
 
     flex: 1 1 auto;
-    background-color: tomato;
-    margin-left: 1rem;
-    text-align: center;
-    
-
 
 }
-div.cont-icon i.ico-color{
+div.cont-icon i.ico-color, div.cont-icon2 i.ico-color2 {
 
-    font-size: 2.5rem;
-    margin-top: 4px;
-    color: white;
+    font-size: 1.3rem;
+    color: #ccc;
+    background-color: crimson;
+    border-radius: 0 30% 0 30%;
+    padding: 12px;
 
 }
-div.col-img{
+div.col-title{
 
-    flex: 3 1 auto;
-    background-color: turquoise;
-    text-align: center;
+    flex: 2 1 auto;
+    color: #ccc;
 }
-img{
+div.col-icon2{
 
-    height: 100%;
+    flex: 1 1 auto;
+    text-align: left;
+
+}
+div.cont-icon2 i.ico-color2{
+
+    font-size: 1rem;
+    color: #ccc;
+   
+}
+div.cont-icon2 i.ico-color2 span{
+
+    margin-left: 5px;
 
 }
 

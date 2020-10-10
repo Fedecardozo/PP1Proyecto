@@ -1,8 +1,7 @@
-var i = 0;
+
 function sumar(){
-    i++;
-    var mas = document.getElementById("cantCarne");
-    mas.value = 0;
-    
+
+    var sumar = document.getElementById("cantCarne").value;
+    sumar = "12";
 
 }
