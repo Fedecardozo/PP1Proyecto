@@ -1,13 +1,41 @@
 
 function sumar(){
 
-    var sumar = document.getElementById("cantCarne").value;
-    sumar = "12";
+    
 
 }
 function mostrarNav(){
 
     var nav = document.getElementById("mostrar-nav");
-    nav.hidden = false;
+
+    if(nav.hidden == true){
+
+        nav.hidden = false;
+
+    }else{
+
+        nav.hidden = true;
+
+    }
+
+}
+function ayuda(){
+
+    
+
+}
+function pedido(){
+
+    var mostrarForm = document.getElementById("id-form");
+     
+    if(mostrarForm.hidden== true){
+
+        mostrarForm.hidden = false;
+
+    }else{
+
+        mostrarForm.hidden = true;
+
+    }
 
 }

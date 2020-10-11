@@ -15,7 +15,8 @@
     <header>
         <!-- Aca tiene que salir un menu despegable con todo el nav -->
         <div class="col-icon">
-            <!-- <i class="fas fa-beer ico-color"></i> -->
+            
+            <!-- fas fa-user-plus ico-color2 -->
             <div class="cont-icon">
                 <button class="btn-menu" onclick="mostrarNav()">
                     <i class="fas fa-bars ico-color"> <span>Menú</span> </i>
@@ -33,8 +34,8 @@
         <!-- Para ser cliente -->
         <div class="col-icon2">
             <div class="cont-icon2">
-                <button class="btn-cliente">
-                    <i class="fas fa-user-plus ico-color2"><span>Hacete Cliente</span></i>
+                <button class="btn-cliente" onclick="pedido()">
+                    <i class="fas fa-hamburger"><span> Armar pedido</span></i>
                 </button>
             </div>
         </div>
@@ -50,11 +51,10 @@
     <div class="col-nav" id="mostrar-nav" hidden>
         <nav>
             <ul>
-    
-                <li>* Nuestro menú</li>
-                <li>* Nosotros</li>
-                <li>* Combos</li>
-                <li>* Promociones</li>
+                <li><a href="#">* Nuestro menú</a></li>
+                <li><a href="#">* Nosotros</a></li>
+                <li><a href="#">* Combos</a></li>
+                <li><a href="#">* Promociones</a></li>
             </ul>
         </nav>
     </div>
@@ -62,8 +62,8 @@
     <section>
 
     </section>
-    <!-- Aca es donde se arma el pedido -->
-    <form action="" id="id-form">
+     <!-- Aca es donde se arma el pedido -->
+     <form action="" id="id-form" hidden>
         <div class="cont-formulario">
             <div class="cont-head">
                 <h2>Empanadas</h2>
@@ -104,7 +104,7 @@
 
                     <input type="button" value="Finalizar" class="sub-fin">
                     <input type="reset" value="Reiniciar" class="sub-lim">
-                    <button class="mas" onclick="sumar()">+</button>
+                    <button class="mas" onclick="sumar()" onfocus="ayuda()">+</button>
 
                 </div>
             </div>  

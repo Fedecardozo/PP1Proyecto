@@ -81,7 +81,7 @@ div.cont-icon button.btn-menu:hover, div.cont-icon2 button.btn-cliente:hover{
 
     cursor: pointer;
     background-color: rgba(220, 20, 60, 0.795);
-    color: wheat;
+    color: rgba(245, 222, 179, 0.849);
 
 }
 div.col-title{
@@ -113,7 +113,6 @@ div.col-nav{
 
     text-align: center;
     width: 100%;
-    color: cornsilk;
     /* margin-top: 2px; */
     background-color: rgba(109, 109, 109, 0.767);
 
@@ -123,28 +122,23 @@ div.col-nav nav ul li{
     display: inline-block;
     font-size: 1.1rem;
     padding: 3px;
+    margin-right: 2rem;
+    
+}
+div.col-nav nav ul li a{
+
+    color: cornsilk;
+
+}
+div.col-nav nav ul li a:hover{
+
+    color: lightskyblue;
 
 }
 /* FIN DEL NAV */
 
 /* ACA DARIA COMIENZO AL SECTION */
-form{
 
-    
-    /* flex-flow: row nowrap; */
-    /* background-color: darkmagenta; */
-    /* align-items: center; */
-    /*text-align: center; */
-
-}
-/* div.cont-form{
-
-    display: flex;
-    background-color: deeppink;
-    justify-content: center;
-    
-
-} */
 div.cont-formulario{
 
     display: inline-block;
@@ -337,4 +331,21 @@ aside.social a:hover{
     display: block;
     padding: 10px 0 10px 0;
     /* margin: auto;
+} */
+/*form{
+
+    
+    /* flex-flow: row nowrap; */
+    /* background-color: darkmagenta; */
+    /* align-items: center; */
+    /*text-align: center; */
+
+}
+/* div.cont-form{
+
+    display: flex;
+    background-color: deeppink;
+    justify-content: center;
+    
+
 } */
