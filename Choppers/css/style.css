@@ -164,18 +164,63 @@ div.cont-body{
 }
 div.separador{
 
-    margin-bottom: 2px;
+    margin-top: 0.5rem;
+
+}
+button.menos{
+
+    background-color: rgb(133, 24, 24);
+    color: white;
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    /* margin: 25px 0 1px 0; */
+    /* position: relative; */
+    /* right: 0;   */
+    border: none;
+    font-size: 2rem;
+
+}
+button.menos:hover{
+
+    cursor: pointer;
+    background-color: rgb(214, 48, 48);
+    color: #ccc
+
+
+}
+button.number-mas{
+
+    background-color: rgb(23, 58, 18);
+    color: white;
+    border-radius: 100%;
+    width: 2.2rem;
+    height: 2.2rem;
+    /* margin: 0 0 0 1rem; */
+    /* position: relative;
+    right: 0;   */
+    border: none;
+    font-size: 2rem;
+
+}
+button.number-mas:hover{
+
+    cursor: pointer;
+    background-color: rgb(29, 121, 29);
+    color: #ccc;
+
 
 }
 
 /**************Estilos a los selects*********** */
-select{
+select.tipo{
 
     font-size: 1.3rem;
     text-align: center;
     color: #212529;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -198,7 +243,7 @@ form div.cont-body label{
     font-size: 1.2rem;
 
 }
-button.mas , button.menos{
+button.mas{
     background-color: dodgerblue;
     color: white;
     border-radius: 100%;
@@ -210,16 +255,16 @@ button.mas , button.menos{
     border: none;
     font-size: 2rem;
 }
-button.mas:hover , button.menos:hover{
+button.mas:hover{
 
     cursor: pointer;
     background-color: deepskyblue;
-    color: #ccc
+    color: #ccc;
 
 }
 div input.sub-fin {
     text-decoration: none;
-    background-color: rgb(30, 163, 81);
+    background-color: rgb(23, 58, 18);
     color: white;
     border-radius: 5px;
     padding: 0.5rem;
@@ -231,13 +276,13 @@ div input.sub-fin {
 div input.sub-fin:hover{
 
     cursor: pointer;
-    background-color: rgb(34, 207, 63);
-    color: rgb(15, 15, 15);
+    background-color: rgb(29, 121, 29);
+    color: #ccc;
 
 }
 div input.sub-lim {
     text-decoration: none;
-    background-color: rgb(163, 50, 30);
+    background-color: rgb(133, 24, 24);
     color: white;
     border-radius: 5px;
     padding: 0.5rem;
@@ -249,8 +294,8 @@ div input.sub-lim {
 div input.sub-lim:hover{
 
     cursor: pointer;
-    background-color: rgb(199, 54, 54);
-    color: rgb(15, 15, 15);
+    background-color: rgb(214, 48, 48);
+    color: #ccc;
 
 }
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
