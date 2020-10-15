@@ -168,6 +168,18 @@ div.separador{
 
 }
 
+/**************Estilos a los selects*********** */
+select{
+
+    font-size: 1.3rem;
+    text-align: center;
+    color: #212529;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
 /* ***********Estilos a los imputs********** */
 form div.cont-body input[type = number]{
 
@@ -186,7 +198,7 @@ form div.cont-body label{
     font-size: 1.2rem;
 
 }
-button.mas{
+button.mas , button.menos{
     background-color: dodgerblue;
     color: white;
     border-radius: 100%;
@@ -198,7 +210,7 @@ button.mas{
     border: none;
     font-size: 2rem;
 }
-button.mas:hover{
+button.mas:hover , button.menos:hover{
 
     cursor: pointer;
     background-color: deepskyblue;
