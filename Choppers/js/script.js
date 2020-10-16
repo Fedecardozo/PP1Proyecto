@@ -1,23 +1,26 @@
 
-function sumar(){
-
-    
-
-}
 function mostrarNav(){
-
+    
     var nav = document.getElementById("mostrar-nav");
     var span = document.getElementById("span-menu");
-
+    
     if(nav.hidden == true){
-
+        
         nav.hidden = false;
-
+        
     }else{
-
+        
         nav.hidden = true;
-
+        
     }
+    
+}
+
+function cerrar(){
+
+    var datosPer = document.getElementById("datos-personales");
+    datosPer.hidden = true;
+
 
 }
 function ayuda(){
@@ -36,6 +39,21 @@ function pedido(){
     }else{
 
         mostrarForm.hidden = true;
+
+    }
+
+}
+function sumar(){
+
+    var form2 = document.getElementById("id-form2");
+
+    if(form2.hidden== true){
+
+        form2.hidden = false;
+
+    }else{
+
+        form2.hidden = true;
 
     }
 

@@ -28,7 +28,7 @@
         <div class="col-title">
 
             <!-- <img src="img/choppers.jpg" alt=""> -->
-            <h1>Choppers Empanadas</h1>
+            <h1 class="bold">Choppers Empanadas</h1>
 
         </div>
         <!-- Para ser cliente -->
@@ -90,9 +90,9 @@
                        <input type="number" id="cantCarne" placeholder="12">
                        <button class="number-mas">+</button><br>
                        <label for="frita">Frita</label>
-                       <input type="radio" name="coccion" id="frita">
+                       <input type="radio" name="coccion" value="Frita">
                        <label for="horno">Horno</label>
-                       <input type="radio" name="coccion" id="horno">
+                       <input type="radio" name="coccion" value="Horno">
     
                    </div>
                    <div class="separador">
@@ -110,9 +110,9 @@
                        <input type="number" id="cantCarne" placeholder="12">
                        <button class="number-mas">+</button><br>
                        <label for="frita">Frita</label>
-                       <input type="radio" name="coccion" id="frita">
+                       <input type="radio" name="coccion2" value="Frita">
                        <label for="horno">Horno</label>
-                       <input type="radio" name="coccion" id="horno">
+                       <input type="radio" name="coccion2" value="Horno">
     
                    </div>
                    <div class="separador">
@@ -130,16 +130,16 @@
                        <input type="number" id="cantCarne" placeholder="12">
                        <button class="number-mas">+</button><br>
                        <label for="frita">Frita</label>
-                       <input type="radio" name="coccion" id="frita">
+                       <input type="radio" name="coccion3" value="Frita">
                        <label for="horno">Horno</label>
-                       <input type="radio" name="coccion" id="horno"><br>
+                       <input type="radio" name="coccion3" value="Horno"><br>
     
                    </div>
                    <div>
     
-                       <input type="button" value="Finalizar" class="sub-fin" onclick="datos()">
                        <input type="reset" value="Reiniciar" class="sub-lim">
-                       <button class="mas" onclick="sumar()" onfocus="ayuda()">+</button>
+                       <input type="button" value="Finalizar" class="sub-fin" onclick="datos()">
+                       <button class="mas" onclick="sumar()">+</button>
     
                    </div>
                </div>  
@@ -148,6 +148,90 @@
            
        </form>
 
+
+    </div>
+    <div class="container">
+
+        <form action="" id="id-form2">
+            <div class="cont-formulario">
+                <div class="cont-head">
+                    <h2>Empanadas</h2>
+                </div>
+                <hr>
+                <div class="cont-body">
+                    <div class="separador">
+     
+                        <!-- <label for="cantCarne">Empanadas de carne</label><br> -->
+                        <select name="" id="" class="tipo">
+     
+                            <option value="carne">Carne</option>
+                            <option value="carneCuchillo">Carne c/cuchillo</option>
+                            <option value="pollo">Pollo</option>
+                            <option value="polloVerdeo">Pollo al verdeo</option>
+                            <option value="JyQ">Jamon y queso</option>
+     
+                        </select><br>
+                        <button class="menos">-</button>
+                        <input type="number" id="cantCarne" placeholder="12">
+                        <button class="number-mas">+</button><br>
+                        <label for="frita">Frita</label>
+                        <input type="radio" name="coccion" value="Frita">
+                        <label for="horno">Horno</label>
+                        <input type="radio" name="coccion" value="Horno">
+     
+                    </div>
+                    <div class="separador">
+                        
+                        <select name="" id="" class="tipo">
+     
+                            <option value="carne">Carne</option>
+                            <option value="carneCuchillo">Carne c/cuchillo</option>
+                            <option value="pollo">Pollo</option>
+                            <option value="polloVerdeo">Pollo al verdeo</option>
+                            <option value="JyQ">Jamon y queso</option>
+     
+                        </select><br>
+                        <button class="menos">-</button>
+                        <input type="number" id="cantCarne" placeholder="12">
+                        <button class="number-mas">+</button><br>
+                        <label for="frita">Frita</label>
+                        <input type="radio" name="coccion" id="Frita">
+                        <label for="horno">Horno</label>
+                        <input type="radio" name="coccion" id="Horno">
+     
+                    </div>
+                    <div class="separador">
+     
+                        <select name="" id="" class="tipo">
+     
+                            <option value="carne">Carne</option>
+                            <option value="carneCuchillo">Carne c/cuchillo</option>
+                            <option value="pollo">Pollo</option>
+                            <option value="polloVerdeo">Pollo al verdeo</option>
+                            <option value="JyQ">Jamon y queso</option>
+     
+                        </select><br>
+                        <button class="menos">-</button>
+                        <input type="number" id="cantCarne" placeholder="12">
+                        <button class="number-mas">+</button><br>
+                        <label for="frita">Frita</label>
+                        <input type="radio" name="coccion" value="Frita">
+                        <label for="horno">Horno</label>
+                        <input type="radio" name="coccion" value="Horno"><br>
+     
+                    </div>
+                    <div>
+     
+                        <input type="reset" value="Cancelar" class="sub-lim">
+                        <input type="button" value="Finalizar" class="sub-fin" onclick="datos()">
+                        <button class="mas" onclick="sumar()">+</button>
+     
+                    </div>
+                </div>  
+                  
+            </div>
+            
+        </form>
 
     </div>
     <div class="container">
@@ -176,7 +260,7 @@
                     </div>
                     <div class="separador">
                         <input type="button" value="Enviar" class="sub-fin">
-                        <input type="reset" value="Cancelar" class="sub-lim">
+                        <input type="button" value="Cancelar" class="sub-lim" onclick="cerrar()">
                     </div>
      
             </div>

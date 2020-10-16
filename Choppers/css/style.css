@@ -46,6 +46,11 @@ div.logo-gif img{
     }
 
 }
+.bold{
+
+    font-weight: bold;
+
+}
 /*******FIN DE GLOBALES********/
 /* Comienzo del encabezado */
 header{
