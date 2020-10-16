@@ -40,3 +40,9 @@ function pedido(){
     }
 
 }
+function datos(){
+
+    var personales = document.getElementById("datos-personales");
+    personales.hidden = false;
+
+}

@@ -139,9 +139,16 @@ div.col-nav nav ul li a:hover{
 
 /* ACA DARIA COMIENZO AL SECTION */
 
-div.cont-formulario{
+div.container{
 
     display: inline-block;
+    background-color: aqua;
+
+}
+
+div.cont-formulario{
+
+    /* display: inline-block; */
     margin: 2rem 2rem;
     background-color:  #f3f3f3;
     /* padding: 0 2rem 2rem 2rem; */
