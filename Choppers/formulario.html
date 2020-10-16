@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chopper Empanadas</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formStyle.css">
     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="js/script.js"></script>
 
 </head>
 <body>
+
+    <div class="cont-icon2 posicion">
+        <button class="btn-cliente" onclick="pedido()">
+            <i class="fas fa-hamburger"><span> Agregar</span></i>
+        </button>
+    </div>
     
      <!-- Aca es donde se arma el pedido -->
 
@@ -98,6 +106,7 @@
 
 
     </div>
+
     <div class="container">
 
         <form action="" id="id-form2">
@@ -207,8 +216,8 @@
                         
                     </div>
                     <div class="separador">
-                        <input type="button" value="Enviar" class="sub-fin">
                         <input type="button" value="Cancelar" class="sub-lim" onclick="cerrar()">
+                        <input type="button" value="Enviar" class="sub-fin">
                     </div>
      
             </div>
