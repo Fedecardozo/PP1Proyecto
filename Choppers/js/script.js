@@ -7,6 +7,7 @@ function sumar(){
 function mostrarNav(){
 
     var nav = document.getElementById("mostrar-nav");
+    var span = document.getElementById("span-menu");
 
     if(nav.hidden == true){
 
