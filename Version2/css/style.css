@@ -132,5 +132,53 @@ div.col2{
     /* background-color: blueviolet; */
 
 }
+div.col2 a img{
 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+}
 /* *********** FIN DE HEADER *********** */
+
+/* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
+aside.social{
+
+    /* background-color: rgba(49, 47, 47, 0.582); */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    
+}
+aside.social a img{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    margin: 5px;
+    background-color: #ccc;
+    animation: girar 5s ;
+    transition: all 2s ease;
+
+}
+
+aside.social a img:hover{
+
+    transform: scale(0.9);
+    border: 1px solid #f3f3f3;
+
+}
+@keyframes girar{
+    from{
+
+        opacity: 0;
+    }
+    to{
+
+        transform: rotateY(360deg);
+    }
+
+}
