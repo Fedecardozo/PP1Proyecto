@@ -122,25 +122,21 @@ div.col-title{
 
     flex: 2 1 auto;
     color: #ccc;
-    /* background-color: aqua; */
+
+}
+h1.bold{
+
+    font-style: bold;
+
 }
 div.col2{
 
     flex: 1 1 auto;
     text-align: left;
     color: #ccc;
-    /* background-color: blueviolet; */
 
 }
-div.col2 a img{
 
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 100%;
-    border: 1px solid #ccc;
-}
 /* *********** FIN DE HEADER *********** */
 
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
@@ -154,10 +150,11 @@ aside.social{
 }
 aside.social a img{
 
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 100%;
     display: block;
+    padding: 2px;
     margin: 5px;
     background-color: #ccc;
     animation: girar 5s ;
