@@ -6,32 +6,7 @@
     <title>Choppers Empanadas</title>
     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-
-        function formarX(){
-
-            var span1 = document.getElementById("linea1");
-            var span2 = document.getElementById("linea2");
-            var span3 = document.getElementById("linea3");
-
-        if(span1.className == 'derecho1'){
-
-            span1.className = 'cruzado1';
-            span2.className = 'cruzado2';
-            span3.className = 'cruzado3';
-
-        }else{
-
-            span1.className = 'derecho1';
-            span2.className = 'derecho2';
-            span3.className = 'derecho3';
-
-        }
-
-            
-        }
-
-    </script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -42,16 +17,45 @@
 
     </div>
 
-    <!-- MENU HAMBUERGUESA -->
-    <div class="menu" onclick="formarX()">
-        <label for="btn-menu" class="menu-ham">
+    <!-- INICIO DEL HEADER -->
+    <header>
+        <div class="col-ham">
             
-            <span id="linea1" class="derecho1"></span>
-            <span id="linea2" class="derecho2"></span>
-            <span id="linea3" class="derecho3"></span>
-            
-        </label>
-    </div>
+            <!-- MENU HAMBUERGUESA -->
+            <div class="cont-icon">
+                <div class="menu" onclick="formarX()">
+                    <div for="btn-menu" class="menu-ham">
+                        
+                        <span id="linea1" class="derecho1"></span>
+                        <span id="linea2" class="derecho2"></span>
+                        <span id="linea3" class="derecho3"></span>
+                
+                    </div>
+                    <label id="lbl-menu">Menu</label>
+                </div>
+            </div>
+
+        </div>
+        <!-- Aca tiene que estar la imagen central de la casa de comidas -->
+        <div class="col-title">
+
+            <!-- <img src="img/choppers.jpg" alt=""> -->
+            <h1 class="bold">Choppers Empanadas</h1>
+
+        </div>
+        <!-- Para ser cliente -->
+        <div class="col-icon2">
+            <div class="cont-icon2">
+
+                <h2>Nose</h2>
+
+            </div>
+        </div>
+    </header>
+
+    
+    
+
     
 </body>
 </html>
