@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choppers Empanadas</title>
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+
+        function formarX(){
+
+            var span1 = document.getElementById("linea1");
+            var span2 = document.getElementById("linea2");
+            var span3 = document.getElementById("linea3");
+
+        if(span1.className = 'derecho1'){
+
+            span1.className = 'cruzado1';
+            span2.className = 'cruzado2';
+            span3.className = 'cruzado3';
+
+        }else{
+
+            // span1.className = 'derecho1';
+            span2.className = 'derecho2';
+            span3.className = 'derecho3';
+
+        }
+
+            
+        }
+
+    </script>
 </head>
 <body>
+
+    <!-- LOGO FIJO -->
+    <div class="logo-gif">
+
+        <img src="img/Empanada.png" alt="">
+
+    </div>
+
+    <!-- MENU HAMBUERGUESA -->
+    <div class="menu" onclick="formarX()">
+        <label for="btn-menu" class="menu-ham">
+            
+            <span id="linea1" class="derecho1"></span>
+            <span id="linea2" class="derecho2"></span>
+            <span id="linea3" class="derecho3"></span>
+            
+        </label>
+    </div>
     
 </body>
 </html>
