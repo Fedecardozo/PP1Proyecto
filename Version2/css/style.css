@@ -113,7 +113,7 @@ header{
 
         transform: rotate(-140deg);
         top: 10px;
-        background-color: darkgreen;
+        background-color: crimson;
 
     }
 
@@ -124,11 +124,6 @@ div.col-title{
     color: #ccc;
 
 }
-h1.bold{
-
-    font-style: bold;
-
-}
 div.col2{
 
     flex: 1 1 auto;
@@ -136,8 +131,54 @@ div.col2{
     color: #ccc;
 
 }
+button.btn-pedido{
+
+    font-size: 1.3rem;
+    color: #ccc;
+    background-color: #a5202b;
+    border-radius: 0 30% 0 30%;
+    padding: 12px;
+
+}
+button.btn-pedido:hover{
+
+    cursor: pointer;
+    background-color: rgba(177, 13, 46, 0.795);
+    color: rgba(245, 222, 179, 0.849);
+
+}
 
 /* *********** FIN DE HEADER *********** */
+
+/* ******** INICIO DEL MENU (NAV) ******* */
+div.col-nav{
+
+    text-align: center;
+    width: 100%;
+    /* margin-top: 2px; */
+    background-color: rgba(109, 109, 109, 0.767);
+
+}
+div.col-nav nav ul li{
+
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 3px;
+    margin-right: 2rem;
+    
+}
+div.col-nav nav ul li a{
+
+    text-decoration: none;
+    color: cornsilk;
+
+}
+div.col-nav nav ul li a:hover{
+
+    color: lightskyblue;
+
+}
+/* ******* FIN DEL NAV ****** */
 
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
 aside.social{
