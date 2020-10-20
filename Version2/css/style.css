@@ -131,19 +131,25 @@ div.col2{
     color: #ccc;
 
 }
-button.btn-pedido{
+div.btn-pedido{
 
-    font-size: 1.3rem;
-    color: #ccc;
+    width: 45%;
     background-color: #a5202b;
     border-radius: 0 30% 0 30%;
     padding: 12px;
+    /* border: 1px solid #a5202b; */
+    box-shadow: -3px -3px 0px 0px rgba(204, 204, 204, 0.733);
 
 }
-button.btn-pedido:hover{
+div.btn-pedido a{
 
-    cursor: pointer;
-    background-color: rgba(177, 13, 46, 0.795);
+    font-size: 1.3rem;
+    color: #ccc;
+    text-decoration: none;
+
+}
+div.btn-pedido a:hover{
+
     color: rgba(245, 222, 179, 0.849);
 
 }
