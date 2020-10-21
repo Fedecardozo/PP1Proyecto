@@ -56,7 +56,7 @@ header{
     display: flex;
     flex-flow: row nowrap;
     height: 5rem;
-    background-color: black;
+    background-color: #2A2A2A;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -68,6 +68,7 @@ header{
     div.menu{
 
         flex: 1 1 auto;
+        text-align: right;
 
     }
     div.menu-ham{
@@ -121,8 +122,14 @@ header{
 /********* FIN MENU HAMBURGUESA **********/
 div.col-title{
 
-    flex: 2 1 auto;
-    color: #ccc;
+    flex: 1 1 auto;
+    /* background-color: darkred; */
+
+}
+div.col-title img{
+
+    width: 65%;
+    height: "54px";
 
 }
 div.col2{
