@@ -4,11 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choppers Empanadas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formStyle.css">
     <script src="js/script.js"></script>
-    
+
 </head>
 <body>
     
+     <!-- LOGO FIJO -->
+     <div class="logo-gif">
+        
+        <img src="img/Empanada.png" alt="">
+
+    </div>
+
+    <!-- INICIO DEL HEADER -->
+    <header>
+            
+        <!-- MENU HAMBUERGUESA -->
+        <div class="menu" onclick="formarX()">
+            <div class="menu-ham">
+                
+                <span id="linea1" class="derecho1"></span>
+                <span id="linea2" class="derecho2"></span>
+                <span id="linea3" class="derecho3"></span>
+        
+            </div>
+        </div>
+
+        <!-- Aca tiene que estar la imagen central de la casa de comidas -->
+        <div class="col-title">
+
+            <a href="index.html"><img src="img/head.png"></a>
+            <!-- <h1><b>CHOPPERS EMPANADAS</b></h1> -->
+
+        </div>
+        <!-- No se bien para que -->
+        <div class="col2">
+            <div class="cont2">
+
+                <!-- <button class="btn-pedido">Hace tu pedido</button> -->
+                <div class="btn-pedido"><a href="formulario.html"> <b>Hace tu pedido</b></a></div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- INICIO DEL NAV -->
+    <div class="col-nav" id="mostrar-nav" hidden>
+        <nav>
+            <ul>
+                <li><a href="formulario.html">Armar pedido</a></li>
+                <li><a href="#">* Promociones</a></li>
+                <li><a href="#">* Combos</a></li>
+                <li><a href="#">* Nuestro menú</a></li>
+                <li><a href="#">* Nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <form action="" id="id-form">
+           <div class="cont-formulario">
+               <div class="cont-head">
+                   <h2>Empanadas</h2>
+               </div>
+               <hr>
+               <div class="cont-body">
+                   <div class="separador">
+    
+                       <!-- <label for="cantCarne">Empanadas de carne</label><br> -->
+                       <select name="" id="" class="tipo">
+    
+                           <option value="carne">Carne</option>
+                           <option value="carneCuchillo">Carne c/cuchillo</option>
+                           <option value="pollo">Pollo</option>
+                           <option value="polloVerdeo">Pollo al verdeo</option>
+                           <option value="JyQ">Jamon y queso</option>
+    
+                       </select><br>
+                       <button class="menos">-</button>
+                       <input type="number" id="cantCarne" placeholder="12">
+                       <button class="number-mas">+</button><br>
+                       <label for="frita">Frita</label>
+                       <input type="radio" name="coccion" value="Frita">
+                       <label for="horno">Horno</label>
+                       <input type="radio" name="coccion" value="Horno">
+    
+                   </div>
+                   <div class="separador">
+                       
+                       <select name="" id="" class="tipo">
+    
+                           <option value="carne">Carne</option>
+                           <option value="carneCuchillo">Carne c/cuchillo</option>
+                           <option value="pollo">Pollo</option>
+                           <option value="polloVerdeo">Pollo al verdeo</option>
+                           <option value="JyQ">Jamon y queso</option>
+    
+                       </select><br>
+                       <button class="menos">-</button>
+                       <input type="number" id="cantCarne" placeholder="12">
+                       <button class="number-mas">+</button><br>
+                       <label for="frita">Frita</label>
+                       <input type="radio" name="coccion2" value="Frita">
+                       <label for="horno">Horno</label>
+                       <input type="radio" name="coccion2" value="Horno">
+    
+                   </div>
+                   <div class="separador">
+    
+                       <select name="" id="" class="tipo">
+    
+                           <option value="carne">Carne</option>
+                           <option value="carneCuchillo">Carne c/cuchillo</option>
+                           <option value="pollo">Pollo</option>
+                           <option value="polloVerdeo">Pollo al verdeo</option>
+                           <option value="JyQ">Jamon y queso</option>
+    
+                       </select><br>
+                       <button class="menos">-</button>
+                       <input type="number" id="cantCarne" placeholder="12">
+                       <button class="number-mas">+</button><br>
+                       <label for="frita">Frita</label>
+                       <input type="radio" name="coccion3" value="Frita">
+                       <label for="horno">Horno</label>
+                       <input type="radio" name="coccion3" value="Horno"><br>
+    
+                   </div>
+                   <div>
+    
+                       <input type="reset" value="Reiniciar" class="sub-lim">
+                       <input type="button" value="Finalizar" class="sub-fin" onclick="datos()">
+                       <button class="mas" onclick="sumar()">+</button>
+    
+                   </div>
+               </div>  
+                 
+           </div>
+           
+       </form>
+
+    <aside class="social">
+
+        <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=541132017019" target="_blank"><img src="img/wap.png" alt=""></a>
+        <a href="https://www.instagram.com/choppersempanadas/?hl=es-la" target="_blank"><img src="img/insta.png" alt=""></a>
+
+    </aside>
+
 </body>
 </html>
