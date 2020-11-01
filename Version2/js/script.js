@@ -1,3 +1,5 @@
+
+
 function formarX(){
 
     var span1 = document.getElementById("linea1");
@@ -29,4 +31,28 @@ function formarX(){
         nav.hidden = true;
         
     }
+
 }
+
+// ******CARROUSEL****** 
+
+    var i = 1;
+    setInterval(siguiente,3000);
+
+    function siguiente(){
+
+        if(i == 1){
+
+            document.getElementById("uno").hidden = true;
+            document.getElementById("dos").hidden = false;
+            i++;
+
+        }else {
+
+            document.getElementById("dos").hidden = true;
+            document.getElementById("tres").hidden = false;
+            i--;
+
+        }
+
+    }   
