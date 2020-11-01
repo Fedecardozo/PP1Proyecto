@@ -41,18 +41,29 @@ function formarX(){
 
     function siguiente(){
 
-        if(i == 1){
+        var uno = document.getElementById("uno");
+        var dos = document.getElementById("dos");
+        var tres = document.getElementById("tres");
 
-            document.getElementById("uno").hidden = true;
-            document.getElementById("dos").hidden = false;
-            i++;
+        switch(i){
 
-        }else {
-
-            document.getElementById("dos").hidden = true;
-            document.getElementById("tres").hidden = false;
-            i--;
+            case 1:
+                uno.hidden = true;
+                dos.hidden = false;
+                i++;
+                break;
+            case 2:    
+                dos.hidden = true;
+                tres.hidden = false;
+                i++;
+                break;
+            case 3:
+                tres.hidden = true;
+                uno.hidden = false;
+                i = 1;
+                break;
 
         }
+      
 
     }   
