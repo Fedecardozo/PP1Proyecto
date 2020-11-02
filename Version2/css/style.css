@@ -224,6 +224,7 @@ div.container{
     background-color: rgba(204, 204, 204, 0.404);
     padding: 10px 0 5px 0;
     border-radius: 7px;
+    border: 1px solid #ccc;
 
 }
 div.container a{
@@ -281,3 +282,11 @@ aside.social a img:hover{
 }
 
 /* ********* FIN DEL ASIDE CON ANIMACION ******* */
+
+/* ********** INICIO FOOTER ********** */
+footer{
+
+    background-color: #2A2A2A;
+    height: 100px;
+
+}
