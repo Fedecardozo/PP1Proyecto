@@ -203,18 +203,38 @@ div.col-nav nav ul li a:hover{
 
 }
 /* ******* FIN DEL NAV ****** */
-/* ******* INICIO CARROUSEL ****** */
-div.cont-fotos{
-
-    margin-top: 1px;
-
-
-}
+/* ******* CARROUSEL ****** */
 div.cont-fotos img{
 
     width: 100%;
     height: 20rem;
 
+}
+
+/* SECCION RELLENO */
+
+div.container{
+
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5rem auto;
+    background-color: rgba(204, 204, 204, 0.404);
+    padding: 10px 0 5px 0;
+    border-radius: 7px;
+
+}
+div.container h4{
+
+    /* margin-left: 10px; */
+
+}
+div.container p{
+
+    /* margin-left: 10px; */
+    font-size: 0.9rem;
 
 }
 
