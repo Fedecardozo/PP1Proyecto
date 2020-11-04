@@ -298,8 +298,13 @@ footer div.foot-col{
     margin: 0 2rem;
     
 }
+footer div.ventas{
 
-footer ul li, footer ul li a{
+    background-color: rgb(97, 93, 93);
+    text-align: center;
+
+}
+footer ul li a, div.ventas a{
 
     color: #ccc;
     text-decoration: none;
