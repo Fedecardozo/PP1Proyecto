@@ -287,6 +287,21 @@ aside.social a img:hover{
 footer{
 
     background-color: #2A2A2A;
-    height: 100px;
+    /* height: 100px; */
+    color: #ccc;
+
+}
+footer div.foot-col{
+
+    display: inline-block;
+    /* background-color: aqua; */
+    margin: 0 2rem;
+    
+}
+
+footer ul li, footer ul li a{
+
+    color: #ccc;
+    text-decoration: none;
 
 }
