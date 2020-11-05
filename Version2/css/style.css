@@ -242,11 +242,7 @@ div.container p{
 }
 
 /* SECCION - ARTICLE */
-section{
 
-    /* background-color: blueviolet; */
-
-}
 section article.nosotros{
 
     text-align: center;
@@ -267,6 +263,21 @@ section article.nosotros img{
 section article.nosotros p{
 
     color: black;
+
+}
+section article.art-container{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+section article.art-container div img{
+
+    width: 25rem;
+    height: 10rem;
+
 
 }
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
