@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style:none;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -284,11 +285,23 @@ aside.social a img:hover{
 /* ********* FIN DEL ASIDE CON ANIMACION ******* */
 
 /* ********** INICIO FOOTER ********** */
+div.ventas{
+
+    background-color: rgb(97, 93, 93);
+    text-align: center;
+    padding: 1rem;
+
+}
 footer{
 
     background-color: #2A2A2A;
     /* height: 100px; */
     color: #ccc;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
 
 }
 footer div.foot-col{
@@ -298,15 +311,20 @@ footer div.foot-col{
     margin: 0 2rem;
     
 }
-footer div.ventas{
-
-    background-color: rgb(97, 93, 93);
-    text-align: center;
-
-}
 footer ul li a, div.ventas a{
 
     color: #ccc;
     text-decoration: none;
+
+}
+footer ul li a:hover{
+
+    color: lightskyblue;
+
+}
+div.icon-social a img{
+
+    width: 2.5rem;
+    height: 2.5rem;
 
 }
