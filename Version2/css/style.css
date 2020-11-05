@@ -271,6 +271,13 @@ section article.art-container{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+}
+section article.art-container div{
+
+    padding: 1rem;
+    margin: 1rem;
 
 }
 section article.art-container div img{
