@@ -221,7 +221,7 @@ div.container{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    margin: 2.5rem auto;
+    margin: 2.5rem auto 0 auto;
     background-color: rgba(204, 204, 204, 0.404);
     padding: 10px 0 5px 0;
     border-radius: 7px;
@@ -241,6 +241,34 @@ div.container p{
 
 }
 
+/* SECCION - ARTICLE */
+section{
+
+    /* background-color: blueviolet; */
+
+}
+section article.nosotros{
+
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    /* background-color: aqua; */
+    color: brown;
+
+}
+
+section article.nosotros img{
+
+    width: 9rem;
+    height: 9rem;
+    
+}
+
+section article.nosotros p{
+
+    color: black;
+
+}
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */
 aside.social{
 
