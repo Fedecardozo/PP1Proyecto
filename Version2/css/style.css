@@ -272,7 +272,7 @@ section article.art-container{
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
 }
 section article.art-container div{
 
@@ -282,9 +282,33 @@ section article.art-container div{
 }
 section article.art-container div img{
 
-    width: 25rem;
-    height: 10rem;
+    width: 28rem;
+    height: 13rem;
+    border: 1px solid #ccc;
+    box-shadow: 0px 9px 20px 0px rgba(50, 50, 50, 1);
 
+}
+.espacio{
+
+    margin: 2rem 0;
+
+}
+span.lineaOff{
+
+    height: 10px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ccc; 
+    display: block;
+
+}
+span.lineaOn{
+
+    height: 10px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ffc62b; 
+    display: block;
 
 }
 /* ASIDE CON LOS ICONOS DE LAS REDES SOCIALES INAMOVIBLES */

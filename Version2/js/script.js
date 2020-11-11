@@ -66,4 +66,93 @@ function formarX(){
         }
       
 
-    }   
+    }  
+
+//Linea on focus
+
+    function on(){
+
+        var linea = document.getElementById("off1");
+
+        linea.className = 'lineaOn';
+
+    }
+    function off(){
+
+        var linea = document.getElementById("off1");
+
+        linea.className = 'lineaOff';
+
+    }
+    function on2(){
+
+        var linea = document.getElementById("off2");
+
+        linea.className = 'lineaOn';
+
+    }
+    function off2(){
+
+        var linea = document.getElementById("off2");
+
+        linea.className = 'lineaOff';
+
+    }
+    function on3(){
+
+        var linea = document.getElementById("off3");
+
+        linea.className = 'lineaOn';
+
+    }
+    function off3(){
+
+        var linea = document.getElementById("off3");
+
+        linea.className = 'lineaOff';
+
+    }
+    function on4(){
+
+        var linea = document.getElementById("off4");
+
+        linea.className = 'lineaOn';
+
+    }
+    function off4(){
+
+        var linea = document.getElementById("off4");
+
+        linea.className = 'lineaOff';
+
+    }
+    function on5(){
+
+        var linea = document.getElementById("off5");
+
+        linea.className = 'lineaOn';
+
+    }
+    function off5(){
+
+        var linea = document.getElementById("off5");
+
+        linea.className = 'lineaOff';
+
+    }
+    function on6(){
+
+        var linea = document.getElementById("off6");
+
+        linea.className = 'lineaOn';
+
+    }
+    function off6(){
+
+        var linea = document.getElementById("off6");
+
+        linea.className = 'lineaOff';
+
+    }
+
+    
