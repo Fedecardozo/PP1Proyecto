@@ -44,6 +44,35 @@ function cifrasAlt(){
     }
 
 }
+
+function suma(){
+
+    var cad = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH", "cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH", "cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
+
+    var i = 0;
+    var acu = 0;
+
+    for(i=0; i<cad.length; i++){
+
+        var aux = document.getElementById(cad[i]);
+
+        if(aux.value >0 && aux.value != ''){
+
+            aux.className = 'cuadroVerde';
+            
+        }else if(aux.value<0){
+            
+            aux.className = 'cuadroRojo';
+
+        }
+
+        acu = acu + aux.value;
+
+    }
+
+    return acu;
+
+}
 function validar(){
 
     var cuatro = document.getElementById("cuatro");
@@ -54,6 +83,16 @@ function validar(){
     var numero5 = document.getElementById("localidad");
     var array = new Array(numero1, numero2, numero3, numero4, numero5);
     var i=0;
+
+    if(suma() > 48){
+
+        alert("EL maximo es 4 docenas");
+
+    }else if(suma() < 6){
+
+        alert("EL minimo es 1/2 docenas");
+
+    }
 
     if(numero4.value == ''){
 
