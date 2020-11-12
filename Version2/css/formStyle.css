@@ -22,6 +22,7 @@ div.contenedor-emp{
     border: 1px solid #ccc;
     background-color: #f3f3f3;
     box-shadow: -1px 9px 9px 0px rgba(50, 50, 50, 0.75);
+    width: 30%;
 }
 div h3{
 
@@ -30,7 +31,7 @@ div h3{
 }
 div.image img{
 
-    width: 24rem;
+    width: 23rem;
     height: 10rem;
     box-shadow: 0px 9px 20px 0px rgba(50, 50, 50, 1);
 
@@ -62,7 +63,7 @@ form div.cont-body input[type = number]{
     /* font: 400 20px Arial; */
     font-size: 1.2rem;
     border-radius: 10px;
-    width: 50%;
+    width: 25%;
     height: 2rem;
     border: 1px solid #ccc;
     text-align: center;

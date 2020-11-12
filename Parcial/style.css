@@ -1,0 +1,31 @@
+body{
+    /*  PUNTO A */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+div{
+
+    /* PUNTO B */
+    border: 2px solid black;
+    border-radius: 5px;
+
+    /* PUNTO C */
+    width: 25%;
+    height: 300px;
+
+    /* PUNTO E */
+    text-align: right;
+}
+input.botonCerrar{
+
+    /* PUNTO D */
+    background-color: red;
+    color: white;
+    font-weight: bold;
+
+    /* PUNTO E */
+    margin: 3px;
+    
+}
