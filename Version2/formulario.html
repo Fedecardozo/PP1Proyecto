@@ -65,228 +65,128 @@
         </nav>
     </div>
 
-    <!-- <div class="container">
+    <form action="">
 
-        <form action="" id="id-form">
-           <div class="cont-formulario">
-               <div class="cont-head">
-                   <h2>Empanadas</h2>
-               </div>
-               <hr>
-               <div class="cont-body">
-                   <div class="separador">
-    
-                       <select name="" id="" class="tipo">
-    
-                           <option value="carne">Carne</option>
-                           <option value="carneCuchillo">Carne c/cuchillo</option>
-                           <option value="pollo">Pollo</option>
-                           <option value="polloVerdeo">Pollo al verdeo</option>
-                           <option value="JyQ">Jamon y queso</option>
-    
-                       </select><br>
-                       <button class="menos">-</button>
-                       <input type="number" id="cantCarne" placeholder="12">
-                       <button class="number-mas">+</button><br>
-                       <label for="frita">Frita</label>
-                       <input type="radio" name="coccion" value="Frita">
-                       <label for="horno">Horno</label>
-                       <input type="radio" name="coccion" value="Horno">
-    
-                   </div>
-                   <div class="separador">
-                       
-                       <select name="" id="" class="tipo">
-    
-                           <option value="carne">Carne</option>
-                           <option value="carneCuchillo">Carne c/cuchillo</option>
-                           <option value="pollo">Pollo</option>
-                           <option value="polloVerdeo">Pollo al verdeo</option>
-                           <option value="JyQ">Jamon y queso</option>
-    
-                       </select><br>
-                       <button class="menos">-</button>
-                       <input type="number" id="cantCarne" placeholder="12">
-                       <button class="number-mas">+</button><br>
-                       <label for="frita">Frita</label>
-                       <input type="radio" name="coccion2" value="Frita">
-                       <label for="horno">Horno</label>
-                       <input type="radio" name="coccion2" value="Horno">
-    
-                   </div>
-                   <div class="separador">
-    
-                       <select name="" id="" class="tipo">
-    
-                           <option value="carne">Carne</option>
-                           <option value="carneCuchillo">Carne c/cuchillo</option>
-                           <option value="pollo">Pollo</option>
-                           <option value="polloVerdeo">Pollo al verdeo</option>
-                           <option value="JyQ">Jamon y queso</option>
-    
-                       </select><br>
-                       <button class="menos">-</button>
-                       <input type="number" id="cantCarne" placeholder="12">
-                       <button class="number-mas">+</button><br>
-                       <label for="frita">Frita</label>
-                       <input type="radio" name="coccion3" value="Frita">
-                       <label for="horno">Horno</label>
-                       <input type="radio" name="coccion3" value="Horno"><br>
-    
-                   </div>
-                   <div>
-    
-                       <input type="reset" value="Reiniciar" class="sub-lim">
-                       <input type="button" value="Finalizar" class="sub-fin" onclick="datos()">
-                       <button class="mas" onclick="sumar()">+</button>
-    
-                   </div>
-               </div>  
-                 
-           </div>
-           
-       </form> -->
+        <div class="cont-form">
 
-       <!-- <div class="container">
+            <div class="contenedor-emp">
+                <h3>Empanadas Carne</h3>
+                <hr><br>
+                <div class="image">
+                    <img src="img/empanadaCarne.jpg" alt="">
+                </div>
+                <div class="cont-body">
 
-            <div class="cont-head">
+                    <h3>Carne</h3>
+                    <div class="separador">
 
-                <img src="img/empanadaCarne.jpg" width="100px" height="100px" alt="">
+                        <label for="frita">Frita</label>
+                        <input type="number" id="cantCarneF" placeholder="12">
+                        <label for="horno">Horno</label>
+                        <input type="number" id="cantCarneH" placeholder="12">
+                
+                    </div>
+                    
+                    <h3>Carne C/cuchillo</h3>
+                    <div class="separador">
 
+                        <label for="frita">Frita</label>
+                        <input type="number" id="cantCuchilloF" placeholder="12">
+                        <label for="horno">Horno</label>
+                        <input type="number" id="cantCuchilloH" placeholder="12">
+                        
+                    </div>
+                    
+                </div>
             </div>
+            <div class="contenedor-emp">
+                <h3>Empanadas Pollo</h3>
+                <hr><br>
+                <div class="image">
+                    <img src="img/Pollo.jpg" alt="">
+                </div>
+                <div class="cont-body">
 
-            <div class="cont-body">
+                    <h3>Pollo</h3>
+                    <div class="separador">
 
-                <button class="menos">-</button>
+                        <label for="frita">Frita</label>
+                        <input type="number" id="cantPolloF" placeholder="12">
+                        <label for="horno">Horno</label>
+                        <input type="number" id="cantPolloH" placeholder="12">
+                
+                    </div>
+                    
+                    <h3>Pollo al verdeo</h3>
+                    <div class="separador">
 
-                    <input type="number" id="cantCarne" placeholder="12">
-                    <button class="number-mas">+</button><br>
-                    <label for="frita">Frita</label>
-                    <input type="radio" name="coccion" value="Frita">
-                    <label for="horno">Horno</label>
-                    <input type="radio" name="coccion" value="Horno">
-
+                        <label for="frita">Frita</label>
+                        <input type="number" id="cantVerdeoF" placeholder="12">
+                        <label for="horno">Horno</label>
+                        <input type="number" id="cantVerdeoH" placeholder="12">
+                        
+                    </div>
+                </div>
             </div>
+            <div class="contenedor-emp">
+                <h3>Empanadas Jamon y queso</h3>
+                <hr><br>
+                <div class="image">
+                    <img src="img/JamonQueso.jpg" alt="">
+                </div>
 
-       </div> -->
+                <div class="cont-body">
 
+                    <h3>Jamon y queso</h3>
+                    <div class="separador">
 
-       <form action="">
-
-            <div class="cont-form">
-
-                <div class="contenedor-emp">
-                    <h3>Empanadas Carne</h3>
-                    <hr><br>
-                    <div class="image">
-                        <img src="img/empanadaCarne.jpg" alt="">
+                        <label for="frita">Frita</label>
+                        <input type="number" id="cantJamonF" placeholder="12">
+                        <label for="horno">Horno</label>
+                        <input type="number" id="cantJamonH" placeholder="12">
+                
                     </div>
-                    <div class="cont-body">
-
-                        <h3>Carne</h3>
-                        <div class="separador">
-
-                            <label for="frita">Frita</label>
-                            <input type="number" id="cantCarneF" placeholder="12">
-                            <label for="horno">Horno</label>
-                            <input type="number" id="cantCarneH" placeholder="12">
                     
-                        </div>
-                        
-                        <h3>Carne C/cuchillo</h3>
-                        <div class="separador">
+                    <h3>Cebolla y queso</h3>
+                    <div class="separador">
 
-                            <label for="frita">Frita</label>
-                            <input type="number" id="cantCuchilloF" placeholder="12">
-                            <label for="horno">Horno</label>
-                            <input type="number" id="cantCuchilloH" placeholder="12">
-                           
-                        </div>
+                        <label for="frita">Frita</label>
+                        <input type="number" id="cantCebollaF" placeholder="12">
+                        <label for="horno">Horno</label>
+                        <input type="number" id="cantCebollaH" placeholder="12">
                         
                     </div>
                 </div>
-                <div class="contenedor-emp">
-                    <h3>Empanadas Pollo</h3>
-                    <hr><br>
-                    <div class="image">
-                        <img src="img/Pollo.jpg" alt="">
-                    </div>
-                    <div class="cont-body">
+            </div>
+        
+        </div>
 
-                        <h3>Pollo</h3>
-                        <div class="separador">
-
-                            <label for="frita">Frita</label>
-                            <input type="number" id="cantPolloF" placeholder="12">
-                            <label for="horno">Horno</label>
-                            <input type="number" id="cantPolloH" placeholder="12">
-                    
-                        </div>
-                        
-                        <h3>Pollo al verdeo</h3>
-                        <div class="separador">
-
-                            <label for="frita">Frita</label>
-                            <input type="number" id="cantVerdeoF" placeholder="12">
-                            <label for="horno">Horno</label>
-                            <input type="number" id="cantVerdeoH" placeholder="12">
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor-emp">
-                    <h3>Empanadas Jamon y queso</h3>
-                    <hr><br>
-                    <div class="image">
-                        <img src="img/JamonQueso.jpg" alt="">
-                    </div>
-
-                    <div class="cont-body">
-
-                        <h3>Jamon y queso</h3>
-                        <div class="separador">
-
-                            <label for="frita">Frita</label>
-                            <input type="number" id="cantJamonF" placeholder="12">
-                            <label for="horno">Horno</label>
-                            <input type="number" id="cantJamonH" placeholder="12">
-                    
-                        </div>
-                        
-                        <h3>Cebolla y queso</h3>
-                        <div class="separador">
-
-                            <label for="frita">Frita</label>
-                            <input type="number" id="cantCebollaF" placeholder="12">
-                            <label for="horno">Horno</label>
-                            <input type="number" id="cantCebollaH" placeholder="12">
-                           
-                        </div>
-                    </div>
-                </div>
+        <div class="envio">
+            <h3>Datos personales</h3>
+            <hr>
+            <label for="">Direccion: </label>
+            <input type="text" placeholder="Av Siempre vivas">
+            <label for="">Localidad: </label>
+            <input type="text" placeholder="Avellaneda">
+            <label for="">Altura: </label>
+            <input type="number" placeholder="1590"><br>
+            <label for="">Codigo Postal</label>
+            <input type="number" placeholder="1828">
+            <label for="">Celular</label>
+            <input type="number" placeholder="1164514844">
+            <input type="submit" value="Enviar" class="sub-fin">
             
-            </div>
+        </div>
 
-            <div>
-                
-                <button class="mas">Agregar Milanesa</button> 
-                <input type="submit" value="Enviar" class="sub-fin">
-                
-            </div>
+    </form>
 
-            <div>
-
-            </div>
-
-       </form>
-
-    <aside class="social">
+    <!-- <aside class="social">
 
         <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt=""></a>
         <a href="https://api.whatsapp.com/send?phone=541132017019" target="_blank"><img src="img/wap.png" alt=""></a>
         <a href="https://www.instagram.com/choppersempanadas/?hl=es-la" target="_blank"><img src="img/insta.png" alt=""></a>
 
-    </aside>
+    </aside> -->
     
     <div class="ventas icon-social"> 
         <a href="https://api.whatsapp.com/send?phone=541132017019">

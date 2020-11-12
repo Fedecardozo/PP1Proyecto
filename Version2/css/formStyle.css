@@ -22,7 +22,7 @@ div.contenedor-emp{
     border: 1px solid #ccc;
     background-color: #f3f3f3;
     box-shadow: -1px 9px 9px 0px rgba(50, 50, 50, 0.75);
-    width: 30%;
+    width: 25%;
 }
 div h3{
 
@@ -31,7 +31,7 @@ div h3{
 }
 div.image img{
 
-    width: 23rem;
+    width: 20rem;
     height: 10rem;
     box-shadow: 0px 9px 20px 0px rgba(50, 50, 50, 1);
 
@@ -42,23 +42,19 @@ div.separador{
     margin-bottom: 0.5rem;
 
 }
+div.envio{
 
+    background-color: rgba(204, 204, 204, 0.315);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
 
 /* ********* FIN DEL NUEVO FORMULARIO ******** */
 
-/**************Estilos a los selects*********** */
-select.tipo{
-
-    font-size: 1.3rem;
-    text-align: center;
-    color: #212529;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
 /* ***********Estilos a los imputs********** */
-form div.cont-body input[type = number]{
+input[type = number], input[type = text]{
 
     /* font: 400 20px Arial; */
     font-size: 1.2rem;
@@ -70,7 +66,7 @@ form div.cont-body input[type = number]{
     text-decoration: none;
     margin: 0.5rem 0;
 }
-form div.cont-body label{
+label{
 
     font-size: 1.2rem;
     margin: 0 5px 0 5px ;
@@ -97,12 +93,12 @@ div input.sub-fin {
     text-decoration: none;
     background-color: rgb(23, 58, 18);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0.5rem;
     font-size: 1.2rem;
     border: 1px solid lightblue;
-    margin-right: 5px;
-    
+    margin-left: 1rem;
+    width: 12rem;
 }
 div input.sub-fin:hover{
 

@@ -126,33 +126,5 @@ function formarX(){
         linea.className = 'lineaOff';
 
     }
-    function on5(){
-
-        var linea = document.getElementById("off5");
-
-        linea.className = 'lineaOn';
-
-    }
-    function off5(){
-
-        var linea = document.getElementById("off5");
-
-        linea.className = 'lineaOff';
-
-    }
-    function on6(){
-
-        var linea = document.getElementById("off6");
-
-        linea.className = 'lineaOn';
-
-    }
-    function off6(){
-
-        var linea = document.getElementById("off6");
-
-        linea.className = 'lineaOff';
-
-    }
 
     
