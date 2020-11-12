@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formStyle.css">
-    <script src="js/script.js"></script>
+    <script src="js/formScript.js"></script>
 
 </head>
 <body>
@@ -163,19 +163,20 @@
 
         <div class="envio">
             <h3>Datos personales</h3>
-            <hr>
-            <label for="">Direccion: </label>
-            <input type="text" placeholder="Av Siempre vivas">
-            <label for="">Localidad: </label>
-            <input type="text" placeholder="Avellaneda">
-            <label for="">Altura: </label>
-            <input type="number" placeholder="1590"><br>
-            <label for="">Codigo Postal</label>
-            <input type="number" placeholder="1828">
-            <label for="">Celular</label>
-            <input type="number" placeholder="1164514844">
-            <input type="submit" value="Enviar" class="sub-fin">
+            <hr><br>
             
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" placeholder="Av Siempre vivas">
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" placeholder="Avellaneda">
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" placeholder="1590" onblur="cifrasAlt()"><br>
+            <label for="cp">Codigo Postal:</label>
+            <input type="number" placeholder="1828" id="cp" onblur="cifrasCP()">
+            <label for="tel">Celular</label>
+            <input type="number" placeholder="1164514844" id="tel" onblur="cifrasTel()">
+            <input type="submit" value="Enviar" class="sub-fin" onclick="validar()">
+            <h4 id="cuatro" style="color: brown;" hidden>(*)Faltan completar cuadros o estan incorrectos</h4>
         </div>
 
     </form>
