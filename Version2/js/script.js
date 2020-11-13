@@ -37,7 +37,7 @@ function formarX(){
 // ******CARROUSEL****** 
 
     var i = 1;
-    setInterval(siguiente,3000);
+    setInterval(siguiente,5000);
 
     function siguiente(){
 
