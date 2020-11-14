@@ -81,6 +81,7 @@ function validar(){
     var numero3 = document.getElementById("cp");
     var numero4 = document.getElementById("calle");
     var numero5 = document.getElementById("localidad");
+    var h4 = document.getElementById("h4");
     var array = new Array(numero1, numero2, numero3, numero4, numero5);
     var i=0;
 
@@ -97,6 +98,8 @@ function validar(){
     if(numero4.value == ''){
 
         numero4.className = 'cuadroRojo';
+        numero4.innerHTML =  numero4.innerHTML + "(*)";
+        numero4.style.color = "brown";
         
     }else{
 
@@ -107,6 +110,8 @@ function validar(){
     if(numero5.value == ''){
 
         numero5.className = 'cuadroRojo';
+        numero5.innerHTML =  numero5.innerHTML + "(*)";
+        numero5.style.color = "brown";
         
     }else{
 
@@ -116,14 +121,33 @@ function validar(){
 
     for(i=0; i<5; i++){
 
-        if(array[i].className == "cuadroRojo"){
-    
-            cuatro.hidden = true;
-    
-        }else{
-    
-            cuatro.hidden = false;
-    
+        if(array[i].className == "cuadroRojo" || array[i].value ==""){
+            
+            switch(i){
+
+                case 0:
+                    array[i].className == "cuadroRojo";
+                    array[i].innerHTML = array[i].innerHTML + "(*)";
+                    array[i].style.color = "brown";
+                    break;
+                
+                 case 1:
+                    array[i].className == "cuadroRojo";
+                    array[i].innerHTML = array[i].innerHTML + "(*)";
+                    array[i].style.color = "brown";
+                    break;
+
+                 case 2:
+                    array[i].className == "cuadroRojo";
+                    array[i].innerHTML = array[i].innerHTML + "(*)";
+                    array[i].style.color = "brown";
+                    break;    
+
+            }
+
+            h4.style.color = "brown";
+            h4.innerHTML = "(*)Faltan completar cuadros o estan incorrectos";
+            
         }
         
     }
