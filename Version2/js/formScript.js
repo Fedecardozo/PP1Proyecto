@@ -44,6 +44,38 @@ function cifrasAlt(){
     }
 
 }
+function direccion(){
+
+    var calle = document.getElementById("calle");
+
+    if(calle.value == ''){
+
+        calle.className = 'cuadroRojo';
+
+    }else{
+
+        calle.className = 'cuadroVerde';
+
+    }
+    
+
+}
+function direccion2(){
+
+    var local = document.getElementById("localidad");
+
+    if(local.value == ''){
+    
+        local.className = 'cuadroRojo';
+    
+    }else{
+    
+        local.className = 'cuadroVerde';
+    
+    }
+    
+}
+
 
 function suma(){
 
@@ -59,14 +91,18 @@ function suma(){
         if(aux.value >0 && aux.value != ''){
 
             aux.className = 'cuadroVerde';
+            acu = acu + parseInt(aux.value);
             
         }else if(aux.value<0){
             
             aux.className = 'cuadroRojo';
 
         }
+        if(aux.value>48){
 
-        acu = acu + aux.value;
+            aux.className = 'cuadroRojo';
+
+        }
 
     }
 
@@ -75,82 +111,53 @@ function suma(){
 }
 function validar(){
 
-    var cuatro = document.getElementById("cuatro");
-    var numero1 = document.getElementById("altura");
-    var numero2 = document.getElementById("tel");
-    var numero3 = document.getElementById("cp");
-    var numero4 = document.getElementById("calle");
-    var numero5 = document.getElementById("localidad");
     var h4 = document.getElementById("h4");
-    var array = new Array(numero1, numero2, numero3, numero4, numero5);
-    var i=0;
+    var text = new Array("calle", "altura", "tel", "cp", "localidad");
+    var i=0; var flag = false; var sum = 0;
+
+    //alert("suma: " + suma());
 
     if(suma() > 48){
 
-        alert("EL maximo es 4 docenas");
+        alert("EL maximo es 4 docena");
+        sum++;
 
-    }else if(suma() < 6){
+    }else if(suma() < 6 || suma() == 0){
 
-        alert("EL minimo es 1/2 docenas");
-
-    }
-
-    if(numero4.value == ''){
-
-        numero4.className = 'cuadroRojo';
-        numero4.innerHTML =  numero4.innerHTML + "(*)";
-        numero4.style.color = "brown";
-        
-    }else{
-
-        numero4.className = 'cuadroVerde';
+        alert("EL minimo es 1/2 docena");
+        sum++;
 
     }
-    
-    if(numero5.value == ''){
 
-        numero5.className = 'cuadroRojo';
-        numero5.innerHTML =  numero5.innerHTML + "(*)";
-        numero5.style.color = "brown";
-        
-    }else{
+    for(i=0; i<text.length; i++){
 
-        numero5.className = 'cuadroVerde';
+        var aux = document.getElementById(text[i]);
 
-    }    
+        if(aux.className == 'cuadroRojo' || aux.value == ''){    
 
-    for(i=0; i<5; i++){
-
-        if(array[i].className == "cuadroRojo" || array[i].value ==""){
-            
-            switch(i){
-
-                case 0:
-                    array[i].className == "cuadroRojo";
-                    array[i].innerHTML = array[i].innerHTML + "(*)";
-                    array[i].style.color = "brown";
-                    break;
-                
-                 case 1:
-                    array[i].className == "cuadroRojo";
-                    array[i].innerHTML = array[i].innerHTML + "(*)";
-                    array[i].style.color = "brown";
-                    break;
-
-                 case 2:
-                    array[i].className == "cuadroRojo";
-                    array[i].innerHTML = array[i].innerHTML + "(*)";
-                    array[i].style.color = "brown";
-                    break;    
-
-            }
-
+            aux.className = 'cuadroRojo';
+                    
             h4.style.color = "brown";
-            h4.innerHTML = "(*)Faltan completar cuadros o estan incorrectos";
+            h4.innerHTML = "(*)Faltan completar cuadros o estan incorrectos <br> (*)Son los que estan en rojo";
+            sum++;
             
+        }else{
+
+            aux.className = 'cuadroVerde';
+    
         }
         
     }
+    //alert(sum);
+    if(sum == 0 ){
 
+        return true;
+
+    }else{
+
+        return false;
+
+    }
+    
 
 }

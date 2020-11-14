@@ -78,7 +78,7 @@
                 </div>
                 <div class="cont-body">
 
-                    <h3>Carne</h3>
+                    <h3>Carne $45 c/u</h3>
                     <div class="separador">
 
                         <label for="cantCarneF">Frita</label>
@@ -88,7 +88,7 @@
                 
                     </div>
                     
-                    <h3>Carne C/cuchillo</h3>
+                    <h3>Carne C/cuchillo $50 c/u</h3>
                     <div class="separador">
 
                         <label for="cantCuchilloF">Frita</label>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="cont-body">
 
-                    <h3>Pollo</h3>
+                    <h3>Pollo $45 c/u</h3>
                     <div class="separador">
 
                         <label for="cantPolloF">Frita</label>
@@ -118,7 +118,7 @@
                 
                     </div>
                     
-                    <h3>Pollo al verdeo</h3>
+                    <h3>Pollo al verdeo $50 c/u</h3>
                     <div class="separador">
 
                         <label for="cantVerdeoF">Frita</label>
@@ -138,7 +138,7 @@
 
                 <div class="cont-body">
 
-                    <h3>Jamon y queso</h3>
+                    <h3>Jamon y queso $45 c/u</h3>
                     <div class="separador">
 
                         <label for="cantJamonF">Frita</label>
@@ -148,7 +148,7 @@
                 
                     </div>
                     
-                    <h3>Cebolla y queso</h3>
+                    <h3>Cebolla y queso $45 c/u</h3>
                     <div class="separador">
 
                         <label for="cantCebollaF">Frita</label>
@@ -162,24 +162,58 @@
         
         </div>
 
+        <table border="1" class="tabla">
+
+            <thead>
+                <th>Empanadas</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+            </thead>
+            <tbody>
+                <td>Carne</td>
+                <td>12</td>
+                <td>$ 45</td>
+                <td>$ 510</td>
+                <tr>
+                    <td>Carne</td>
+                    <td>12</td>
+                    <td>$ 45</td>
+                    <td>$ 510</td>
+                </tr>
+                <td>Total acmulado $ 2000</td>
+            </tbody>
+
+        </table>
+
+
+
         <div class="envio">
+
             <h3>Datos personales</h3>
             <hr><br>
             
             <label for="calle">Calle:</label>
-            <input type="text" id="calle" placeholder="Av Siempre vivas">
+            <input type="text" id="calle" placeholder="Av Siempre vivas" onblur="direccion()">
+
             <label for="localidad">Localidad:</label>
-            <input type="text" id="localidad" placeholder="Avellaneda">
+            <input type="text" id="localidad" placeholder="Avellaneda" onblur="direccion2()">
+
             <label for="altura">Altura:</label>
             <input type="number" id="altura" placeholder="1590" onblur="cifrasAlt()"><br>
+
             <label for="cp">Codigo Postal:</label>
             <input type="number" placeholder="1828" id="cp" onblur="cifrasCP()">
+
             <label for="tel">Celular</label>
             <input type="number" placeholder="1164514844" id="tel" onblur="cifrasTel()">
-            <input type="submit" value="Enviar" class="sub-fin" onclick="validar()">
-            <h4 id="h4"></h4>
-        </div>
 
+            <input type="submit" value="Enviar" class="sub-fin" onclick= " return validar() "><br>
+        
+            <h4 id="h4"></h4>
+
+        </div>
+        
     </form>
 
     <!-- <aside class="social">
