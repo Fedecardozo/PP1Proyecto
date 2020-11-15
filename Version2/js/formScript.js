@@ -1,10 +1,20 @@
+var acu=0; var cantidad=0;
 
+function calcular(){
+
+    document.getElementById("cal").hidden = true;
+
+    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
+    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+
+
+}
 function tablaCarne(){
 
     var tbody = document.getElementById("tbody");
     var btn = document.getElementById("btn1").hidden = true;
     var emp = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH");
-    var i=0; var acu=0; var cantidad=0;
+    var i=0;
 
     for(i=0; i<emp.length; i++){
 
@@ -55,16 +65,13 @@ function tablaCarne(){
 
     }
 
-    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
-    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
-
 }
 function tablaPollo(){
 
     var tbody = document.getElementById("tbody");
     var btn = document.getElementById("btn2").hidden = true;
     var emp = new Array("cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH");
-    var i=0; var acu=0; var cantidad=0;
+    var i=0; 
 
     for(i=0; i<emp.length; i++){
 
@@ -113,8 +120,7 @@ function tablaPollo(){
 
     }
 
-    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
-    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+    
 
 }
 function tablaQueso(){
@@ -122,7 +128,7 @@ function tablaQueso(){
     var tbody = document.getElementById("tbody");
     var btn = document.getElementById("btn3").hidden = true;
     var emp = new Array("cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
-    var i=0; var acu=0; var cantidad=0;
+    var i=0; 
 
     for(i=0; i<emp.length; i++){
 
@@ -166,9 +172,6 @@ function tablaQueso(){
         }
 
     }
-
-    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
-    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
 
 }
 
@@ -255,7 +258,7 @@ function suma(){
     var cad = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH", "cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH", "cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
 
     var i = 0;
-    var acu = 0;
+    var acumulador = 0;
 
     for(i=0; i<cad.length; i++){
 
@@ -264,7 +267,7 @@ function suma(){
         if(aux.value >0 && aux.value != ''){
 
             aux.className = 'cuadroVerde';
-            acu = acu + parseInt(aux.value);
+            acumulador = acumulador + parseInt(aux.value);
             
         }else if(aux.value<0){
             
