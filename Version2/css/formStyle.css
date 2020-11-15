@@ -15,7 +15,16 @@ div.cont-form{
     justify-content: space-around;
     text-align: center;
     margin: 2rem 0 2rem 0;
-    
+    animation: vista 4s;
+}
+@keyframes vista{
+
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+
 }
 div.contenedor-emp{
 

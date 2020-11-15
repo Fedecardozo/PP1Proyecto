@@ -2,6 +2,7 @@
 function tablaCarne(){
 
     var tbody = document.getElementById("tbody");
+    var btn = document.getElementById("btn1").hidden = true;
     var emp = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH");
     var i=0; var acu=0; var cantidad=0;
 
@@ -17,9 +18,33 @@ function tablaCarne(){
 
             if(aux2 >= 0){
 
-                tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+ aux2 +"<td>$45</td>"+
-                "</td><td>$"+(aux2*45) + "</td>";
-                acu = acu + aux2*45;
+                switch(i){
+
+                    case 0:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        acu = acu + aux2*45;
+                        break;
+                    case 1:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Horno</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        acu = acu + aux2*45;
+                        break;
+                    case 2:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne cuchillo</td><td>Frita</td><td>"+aux2+"</td><td>$50</td>"+
+                        "<td>$"+(aux2*50) + "</td>";
+                        acu = acu + aux2*50;
+                        break;
+                    case 3:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne cuchillo</td><td>Horno</td><td>"+aux2+"</td><td>$50</td>"+
+                        "<td>$"+(aux2*50) + "</td>";
+                        acu = acu + aux2*50;
+                        break;    
+
+                }
+
+                // tbody.innerHTML = tbody.innerHTML+"<td>"+ aux2 +"<td>$45</td>"+
+                // "</td><td>$"+(aux2*45) + "</td>";
                 cantidad += aux2;
 
             }else{
@@ -37,6 +62,7 @@ function tablaCarne(){
 function tablaPollo(){
 
     var tbody = document.getElementById("tbody");
+    var btn = document.getElementById("btn2").hidden = true;
     var emp = new Array("cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH");
     var i=0; var acu=0; var cantidad=0;
 
@@ -52,9 +78,31 @@ function tablaPollo(){
 
             if(aux2 >= 0){
 
-                tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+ aux2 +"<td>$45</td>"+
-                "</td><td>$"+(aux2*45) + "</td>";
-                acu = acu + aux2*45;
+                switch(i){
+
+                    case 0:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Pollo</td><td>Frita</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        acu = acu + aux2*45;
+                        break;
+                    case 1:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Pollo</td><td>Horno</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        acu = acu + aux2*45;
+                        break;
+                    case 2:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Pollo al verdeo</td><td>Frita</td><td>"+aux2+"</td><td>$50</td>"+
+                        "<td>$"+(aux2*50) + "</td>";
+                        acu = acu + aux2*50;
+                        break;
+                    case 3:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Pollo al verdeo</td><td>Horno</td><td>"+aux2+"</td><td>$50</td>"+
+                        "<td>$"+(aux2*50) + "</td>";
+                        acu = acu + aux2*50;
+                        break;    
+
+                }
+    
                 cantidad += aux2;
 
             }else{
@@ -72,6 +120,7 @@ function tablaPollo(){
 function tablaQueso(){
 
     var tbody = document.getElementById("tbody");
+    var btn = document.getElementById("btn3").hidden = true;
     var emp = new Array("cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
     var i=0; var acu=0; var cantidad=0;
 
@@ -86,9 +135,27 @@ function tablaQueso(){
             var aux2 = parseInt(document.getElementById(emp[i]).value);
 
             if(aux2 >= 0){
+                switch(i){
 
-                tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+ aux2 +"<td>$45</td>"+
-                "</td><td>$"+(aux2*45) + "</td>";
+                    case 0:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Jamon y queso</td><td>Frita</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        break;
+                    case 1:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Jamon y queso</td><td>Horno</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        break;
+                    case 2:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Cebolla y queso</td><td>Frita</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        break;
+                    case 3:
+                        tbody.innerHTML = tbody.innerHTML+"<tr><td>Cebolla y queso</td><td>Horno</td><td>"+aux2+"</td><td>$45</td>"+
+                        "<td>$"+(aux2*45) + "</td>";
+                        break;    
+
+                }
+
                 acu = acu + aux2*45;
                 cantidad += aux2;
 
