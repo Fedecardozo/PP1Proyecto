@@ -56,15 +56,26 @@ div.envio{
 
 /* TABLA DE PRECIOS */
 table{
-    background-color: #ccc;
+    background-color: #f5f5f5;
     padding: 1rem;
+    width: 60%;
     text-align: center;
     box-shadow: -1px 9px 9px 0px rgba(50, 50, 50, 0.75);
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.582);
     margin: auto;
     margin-bottom: 2rem;
 }
+th, td{
 
+    padding: 5px;
+    background-color: #ccc;
+
+}
+td{
+
+    background-color: lightsteelblue;
+
+}
 /* ***********Estilos a los imputs********** */
 input[type = number], input[type = text]{
 

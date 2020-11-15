@@ -113,7 +113,7 @@ function validar(){
 
     var h4 = document.getElementById("h4");
     var text = new Array("calle", "altura", "tel", "cp", "localidad");
-    var i=0; var flag = false; var sum = 0;
+    var i=0; var sum = 0;
 
     //alert("suma: " + suma());
 
