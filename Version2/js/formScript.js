@@ -1,4 +1,110 @@
 
+function tablaCarne(){
+
+    var tbody = document.getElementById("tbody");
+    var emp = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH");
+    var i=0; var acu=0; var cantidad=0;
+
+    for(i=0; i<emp.length; i++){
+
+        var aux = document.getElementById(emp[i]);
+        
+        //alert(aux);
+        
+        if(aux.value != ''){
+            
+            var aux2 = parseInt(document.getElementById(emp[i]).value);
+
+            if(aux2 >= 0){
+
+                tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+ aux2 +"<td>$45</td>"+
+                "</td><td>$"+(aux2*45) + "</td>";
+                acu = acu + aux2*45;
+                cantidad += aux2;
+
+            }else{
+
+                aux.className = 'cuadroRojo';
+            }
+        }
+
+    }
+
+    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
+    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+
+}
+function tablaPollo(){
+
+    var tbody = document.getElementById("tbody");
+    var emp = new Array("cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH");
+    var i=0; var acu=0; var cantidad=0;
+
+    for(i=0; i<emp.length; i++){
+
+        var aux = document.getElementById(emp[i]);
+        
+        //alert(aux);
+        
+        if(aux.value != ''){
+            
+            var aux2 = parseInt(document.getElementById(emp[i]).value);
+
+            if(aux2 >= 0){
+
+                tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+ aux2 +"<td>$45</td>"+
+                "</td><td>$"+(aux2*45) + "</td>";
+                acu = acu + aux2*45;
+                cantidad += aux2;
+
+            }else{
+
+                aux.className = 'cuadroRojo';
+            }
+        }
+
+    }
+
+    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
+    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+
+}
+function tablaQueso(){
+
+    var tbody = document.getElementById("tbody");
+    var emp = new Array("cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
+    var i=0; var acu=0; var cantidad=0;
+
+    for(i=0; i<emp.length; i++){
+
+        var aux = document.getElementById(emp[i]);
+        
+        //alert(aux);
+        
+        if(aux.value != ''){
+            
+            var aux2 = parseInt(document.getElementById(emp[i]).value);
+
+            if(aux2 >= 0){
+
+                tbody.innerHTML = tbody.innerHTML+"<tr><td>Carne</td><td>Frita</td><td>"+ aux2 +"<td>$45</td>"+
+                "</td><td>$"+(aux2*45) + "</td>";
+                acu = acu + aux2*45;
+                cantidad += aux2;
+
+            }else{
+
+                aux.className = 'cuadroRojo';
+            }
+        }
+
+    }
+
+    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
+    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+
+}
+
 function cifrasCP(){
 
     var numero = document.getElementById("cp");
