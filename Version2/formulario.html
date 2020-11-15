@@ -66,7 +66,7 @@
         </nav>
     </div>
 
-    <form action="">
+    <form action="https://formspree.io/f/xzbkvgnl" method="POST">
 
         <div class="cont-form">
 
@@ -81,20 +81,28 @@
                     <h3>Carne $45 c/u</h3>
                     <div class="separador">
 
-                        <label for="cantCarneF">Frita</label>
-                        <input type="number" id="cantCarneF" placeholder="12">
-                        <label for="cantCarneH">Horno</label>
-                        <input type="number" id="cantCarneH" placeholder="12">
+                        <label for="cantCarneF">
+                            Frita
+                            <input type="number" id="cantCarneF" placeholder="12" name="Empanadas Carne Frita">
+                        </label>
+                        <label for="cantCarneH">
+                            Horno
+                            <input type="number" id="cantCarneH" placeholder="12" name="Empanadas Carne Horno">
+                        </label>
                 
                     </div>
                     
                     <h3>Carne C/cuchillo $50 c/u</h3>
                     <div class="separador">
 
-                        <label for="cantCuchilloF">Frita</label>
-                        <input type="number" id="cantCuchilloF" placeholder="12">
-                        <label for="cantCuchilloH">Horno</label>
-                        <input type="number" id="cantCuchilloH" placeholder="12">
+                        <label for="cantCuchilloF">
+                            Frita
+                            <input type="number" id="cantCuchilloF" placeholder="12" name="Empanadas Cuchillo Frita">
+                        </label>
+                        <label for="cantCuchilloH">
+                            Horno
+                            <input type="number" id="cantCuchilloH" placeholder="12" name="Empanadas Cuchillo Horno">
+                        </label>
                         
                     </div>
                     
@@ -111,20 +119,28 @@
                     <h3>Pollo $45 c/u</h3>
                     <div class="separador">
 
-                        <label for="cantPolloF">Frita</label>
-                        <input type="number" id="cantPolloF" placeholder="12">
-                        <label for="cantPolloH">Horno</label>
-                        <input type="number" id="cantPolloH" placeholder="12">
+                        <label for="cantPolloF">
+                            Frita
+                            <input type="number" id="cantPolloF" placeholder="12" name="Empanadas Pollo Frita">
+                        </label>
+                        <label for="cantPolloH">
+                            Horno
+                            <input type="number" id="cantPolloH" placeholder="12" name="Empanadas Pollo Horno">
+                        </label>
                 
                     </div>
                     
                     <h3>Pollo al verdeo $50 c/u</h3>
                     <div class="separador">
 
-                        <label for="cantVerdeoF">Frita</label>
-                        <input type="number" id="cantVerdeoF" placeholder="12">
-                        <label for="cantVerdeoH">Horno</label>
-                        <input type="number" id="cantVerdeoH" placeholder="12">
+                        <label for="cantVerdeoF">
+                            Frita
+                            <input type="number" id="cantVerdeoF" placeholder="12" name="Empanadas Verdeo Frita">
+                        </label>
+                        <label for="cantVerdeoH">
+                            Horno
+                            <input type="number" id="cantVerdeoH" placeholder="12" name="Empanadas Verdeo Horno">
+                        </label>
                         
                     </div>
                 </div>
@@ -141,20 +157,28 @@
                     <h3>Jamon y queso $45 c/u</h3>
                     <div class="separador">
 
-                        <label for="cantJamonF">Frita</label>
-                        <input type="number" id="cantJamonF" placeholder="12">
-                        <label for="cantJamonH">Horno</label>
-                        <input type="number" id="cantJamonH" placeholder="12">
+                        <label for="cantJamonF">
+                            Frita
+                            <input type="number" id="cantJamonF" placeholder="12" name="Empanadas JyQ Frita">
+                        </label>
+                        <label for="cantJamonH">
+                            Horno
+                            <input type="number" id="cantJamonH" placeholder="12" name="Empanadas JyQ Horno">
+                        </label>
                 
                     </div>
                     
                     <h3>Cebolla y queso $45 c/u</h3>
                     <div class="separador">
 
-                        <label for="cantCebollaF">Frita</label>
-                        <input type="number" id="cantCebollaF" placeholder="12">
-                        <label for="cantCebollaH">Horno</label>
-                        <input type="number" id="cantCebollaH" placeholder="12">
+                        <label for="cantCebollaF">
+                            Frita
+                            <input type="number" id="cantCebollaF" placeholder="12" name="Empanadas Cebolla Frita">
+                        </label>
+                        <label for="cantCebollaH">
+                            Horno
+                            <input type="number" id="cantCebollaH" placeholder="12" name="Empanadas Cebolla Horno">
+                        </label>
                         
                     </div>
                 </div>
@@ -162,7 +186,7 @@
         
         </div>
 
-        <table border="1" class="tabla">
+        <table class="tabla">
 
             <thead>
                 <th>Empanadas</th>
@@ -181,7 +205,10 @@
                     <td>$ 45</td>
                     <td>$ 510</td>
                 </tr>
-                <td>Total acmulado $ 2000</td>
+                <td>Total acumulado</td>
+                <td>24</td>
+                <td>---</td>
+                <td>$ 2000</td>
             </tbody>
 
         </table>
@@ -193,20 +220,28 @@
             <h3>Datos personales</h3>
             <hr><br>
             
-            <label for="calle">Calle:</label>
-            <input type="text" id="calle" placeholder="Av Siempre vivas" onblur="direccion()">
+            <label for="calle">
+                Calle:
+                <input type="text" id="calle" placeholder="Av Siempre vivas" name="Calle" onblur="direccion()">
+            </label>
 
-            <label for="localidad">Localidad:</label>
-            <input type="text" id="localidad" placeholder="Avellaneda" onblur="direccion2()">
+            <label for="localidad">
+                Localidad:
+                <input type="text" id="localidad" placeholder="Avellaneda" name="Localidad" onblur="direccion2()">
+            </label>
 
-            <label for="altura">Altura:</label>
-            <input type="number" id="altura" placeholder="1590" onblur="cifrasAlt()"><br>
+            <label for="altura">
+                Altura:
+                <input type="number" id="altura" placeholder="1590" name="Altura" onblur="cifrasAlt()"><br>
+            </label>
 
             <label for="cp">Codigo Postal:</label>
-            <input type="number" placeholder="1828" id="cp" onblur="cifrasCP()">
+            <input type="number" placeholder="1828" id="cp" name="Codigo Postal" onblur="cifrasCP()">
 
-            <label for="tel">Celular</label>
-            <input type="number" placeholder="1164514844" id="tel" onblur="cifrasTel()">
+            <label for="tel">
+                Celular
+                <input type="number" placeholder="1164514844" id="tel" name="Celular" onblur="cifrasTel()">
+            </label>
 
             <input type="submit" value="Enviar" class="sub-fin" onclick= " return validar() "><br>
         

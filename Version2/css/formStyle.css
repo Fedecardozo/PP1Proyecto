@@ -56,7 +56,13 @@ div.envio{
 
 /* TABLA DE PRECIOS */
 table{
-    
+    background-color: #ccc;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: -1px 9px 9px 0px rgba(50, 50, 50, 0.75);
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 /* ***********Estilos a los imputs********** */
