@@ -80,6 +80,7 @@ th, td{
     padding: 1rem;
     background-color: rgba(204, 204, 204, 0.432);
     font-weight: bold;
+    animation: vista 3s;
     
 }
 th{

@@ -2,10 +2,35 @@ var acu=0; var cantidad=0;
 
 function calcular(){
 
-    document.getElementById("cal").hidden = true;
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var boton = document.getElementById("cal");
+    var botonMod = document.getElementById("mod");
+    
 
-    tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
-    "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+    if(botonMod.hidden == true){
+
+        btn1.hidden = true;
+        btn2.hidden = true;
+        btn3.hidden = true;
+        botonMod.hidden = false;
+        boton.hidden = true;
+        tbody.innerHTML = tbody.innerHTML+"<td>Total acumulado</td><td>- - -</td><td>"+cantidad+
+        "</td><td>- - -</td><td>$"+acu+"</td></tr>";
+        
+    }else if(botonMod.hidden == false){
+        
+        btn1.hidden = false;
+        btn2.hidden = false;
+        btn3.hidden = false;
+        botonMod.hidden = true;
+        boton.hidden = false;
+        tbody.innerHTML = "";
+
+    }
+
+   
 
 
 }
