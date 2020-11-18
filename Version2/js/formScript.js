@@ -1,5 +1,7 @@
+//  Variables globales para asi poder reiniciarlos
 var acu=0; var cantidad=0;
 
+// Funcion con botones para calcular y mostrar en una tabla el total del pedido
 function calcular(){
 
     var btn1 = document.getElementById("btn1");
@@ -8,8 +10,8 @@ function calcular(){
     var boton = document.getElementById("cal");
     var botonMod = document.getElementById("mod");
     
-
     if(botonMod.hidden == true){
+        // Oculto los botones y agrego el valor total en la tabla
 
         btn1.hidden = true;
         btn2.hidden = true;
@@ -20,20 +22,21 @@ function calcular(){
         "</td><td>- - -</td><td>$"+acu+"</td></tr>";
         
     }else if(botonMod.hidden == false){
-        
+        // Muestro los botones y reinicio las variables globales y la tabla.
+
         btn1.hidden = false;
         btn2.hidden = false;
         btn3.hidden = false;
         botonMod.hidden = true;
         boton.hidden = false;
         tbody.innerHTML = "";
+        acu=0; cantidad=0;
 
     }
 
-   
-
-
 }
+
+// Funcion del boton Agregar, cada vez que se presione el boton agrega dicho pedido detallado y no agrega datos erroneos
 function tablaCarne(){
 
     var tbody = document.getElementById("tbody");
@@ -49,10 +52,12 @@ function tablaCarne(){
         
         if(aux.value != ''){
             
+            // Nueva variable, para parsearlo
             var aux2 = parseInt(document.getElementById(emp[i]).value);
 
             if(aux2 >= 0){
 
+                // Detallo segun lo pedido
                 switch(i){
 
                     case 0:
@@ -81,6 +86,7 @@ function tablaCarne(){
                 // tbody.innerHTML = tbody.innerHTML+"<td>"+ aux2 +"<td>$45</td>"+
                 // "</td><td>$"+(aux2*45) + "</td>";
                 cantidad += aux2;
+                aux.className = 'cuadroVerde';
 
             }else{
 
@@ -91,6 +97,7 @@ function tablaCarne(){
     }
 
 }
+// Funcion del boton Agregar, cada vez que se presione el boton agrega dicho pedido detallado y no agrega datos erroneos
 function tablaPollo(){
 
     var tbody = document.getElementById("tbody");
@@ -136,6 +143,7 @@ function tablaPollo(){
                 }
     
                 cantidad += aux2;
+                aux.className = 'cuadroVerde';
 
             }else{
 
@@ -148,6 +156,7 @@ function tablaPollo(){
     
 
 }
+// Funcion del boton Agregar, cada vez que se presione el boton agrega dicho pedido detallado y no agrega datos erroneos
 function tablaQueso(){
 
     var tbody = document.getElementById("tbody");
@@ -189,6 +198,7 @@ function tablaQueso(){
 
                 acu = acu + aux2*45;
                 cantidad += aux2;
+                aux.className = 'cuadroVerde';
 
             }else{
 
@@ -200,6 +210,7 @@ function tablaQueso(){
 
 }
 
+// Validacion de datos personales
 function cifrasCP(){
 
     var numero = document.getElementById("cp");
@@ -277,56 +288,59 @@ function direccion2(){
     
 }
 
+// Finalizo la valadicion de datos personales
 
-function suma(){
+// function suma(){
 
-    var cad = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH", "cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH", "cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
+//     var cad = new Array("cantCarneF", "cantCarneH", "cantCuchilloF", "cantCuchilloH", "cantPolloF", "cantPolloH", "cantVerdeoF", "cantVerdeoH", "cantJamonF", "cantJamonH", "cantCebollaF", "cantCebollaH");
 
-    var i = 0;
-    var acumulador = 0;
+//     var i = 0;
+//     var acumulador = 0;
 
-    for(i=0; i<cad.length; i++){
+//     for(i=0; i<cad.length; i++){
 
-        var aux = document.getElementById(cad[i]);
+//         var aux = document.getElementById(cad[i]);
 
-        if(aux.value >0 && aux.value != ''){
+//         if(aux.value >0 && aux.value != ''){
 
-            aux.className = 'cuadroVerde';
-            acumulador = acumulador + parseInt(aux.value);
+//             aux.className = 'cuadroVerde';
+//             acumulador = acumulador + parseInt(aux.value);
             
-        }else if(aux.value<0){
+//         }else if(aux.value<0){
             
-            aux.className = 'cuadroRojo';
+//             aux.className = 'cuadroRojo';
 
-        }
-        if(aux.value>48){
+//         }
+//         if(aux.value>48){
 
-            aux.className = 'cuadroRojo';
+//             aux.className = 'cuadroRojo';
 
-        }
+//         }
 
-    }
+//     }
 
-    return acu;
+//     return acumulador;
 
-}
+// }
+
+// Validacion de los cuadros de las empanadas con el boton de enviar de datos personales.
 function validar(){
 
     var h4 = document.getElementById("h4");
     var text = new Array("calle", "altura", "tel", "cp", "localidad");
-    var i=0; var sum = 0;
+    var i=0; var sum = 0; var flag = true;
 
     //alert("suma: " + suma());
 
-    if(suma() > 48){
+    if(cantidad > 48){
 
-        alert("EL maximo es 4 docena");
-        sum++;
+        alert("EL maximo es 4 docena!");
+        flag = false;
 
-    }else if(suma() < 6 || suma() == 0){
+    }else if(cantidad < 6 || cantidad == 0){
 
-        alert("EL minimo es 1/2 docena");
-        sum++;
+        alert("EL minimo es 1/2 docena. Sino presione en el boton 'Agregar'");
+        flag = false;
 
     }
 
@@ -340,7 +354,7 @@ function validar(){
                     
             h4.style.color = "brown";
             h4.innerHTML = "(*)Faltan completar cuadros o estan incorrectos <br> (*)Son los que estan en rojo";
-            sum++;
+            flag = false;
             
         }else{
 
@@ -349,16 +363,7 @@ function validar(){
         }
         
     }
-    //alert(sum);
-    if(sum == 0 ){
 
-        return true;
-
-    }else{
-
-        return false;
-
-    }
+    return flag;
     
-
 }
