@@ -60,7 +60,13 @@ div.envio{
     box-shadow: -1px 9px 9px 0px rgba(50, 50, 50, 0.75);
     
 }
+.btnCalculo{
 
+    width: 14%; 
+    margin: auto; 
+    margin-bottom: 1rem;
+
+}
 /* ********* FIN DEL NUEVO FORMULARIO ******** */
 
 /* TABLA DE PRECIOS */

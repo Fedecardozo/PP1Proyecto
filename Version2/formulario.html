@@ -66,10 +66,12 @@
         </nav>
     </div>
 
+    <!-- INICIO DEL FORMULARIO CON FORMSPREE PARA RECIBIR LA INFORMACION EL CORREO -->
     <form action="https://formspree.io/f/xzbkvgnl" method="POST">
 
         <div class="cont-form">
 
+            <!-- EMPANADAS DE CARNE -->
             <div class="contenedor-emp">
                 <h3>Empanadas Carne</h3>
                 <hr><br>
@@ -108,6 +110,9 @@
                     <input type="button" id="btn1" value="Agregar" class="sub-fin" onclick="tablaCarne()">
                 </div>
             </div>
+            <!-- FIN EMPANADAS DE CARNE  -->
+
+            <!-- EMPANADAS DE POLLO -->
             <div class="contenedor-emp">
                 <h3>Empanadas Pollo</h3>
                 <hr><br>
@@ -146,6 +151,9 @@
                     <input type="button" id="btn2" value="Agregar" class="sub-fin" onclick="tablaPollo()">
                 </div>
             </div>
+            <!-- FIN FEMPANADAS POLLO -->
+
+            <!-- EMPANADAS DE JAMON Y QUESO  -->
             <div class="contenedor-emp">
                 <h3>Empanadas Jamon y queso</h3>
                 <hr><br>
@@ -185,12 +193,17 @@
                     <input type="button" id="btn3" value="Agregar" class="sub-fin" onclick="tablaQueso()">
                 </div>
             </div>
+            <!-- FIN EMPANADAS DE JAMON Y QUESO  -->
         
         </div>
-        <div style="width: 14%; margin: auto; margin-bottom: 1rem;">
+
+        <!-- BOTONES DE PARA CALCULAR EL TOTAL -->
+        <div class="btnCalculo">
             <input type="button" id="cal" value="Calcular total" class="sub-fin" onclick="calcular()">
             <input type="button" id="mod" value="Modificar" class="sub-fin" onclick="calcular()" hidden>
         </div>
+
+        <!-- INICIO TABLA -->
         <table class="tabla">
 
             <thead>
@@ -205,9 +218,9 @@
             </tbody>
 
         </table>
+        <!-- FIN DE LA TABLA -->
 
-
-
+        <!-- INICIO DATOS PERSONALES -->
         <div class="envio">
 
             <h3>Datos personales</h3>
@@ -241,6 +254,8 @@
             <h4 id="h4"></h4>
 
         </div>
+
+        <!-- FIN DATOS PERSONALES -->
         
     </form>
 

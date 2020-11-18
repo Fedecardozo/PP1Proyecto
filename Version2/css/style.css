@@ -121,6 +121,9 @@ header{
     }
 
 /********* FIN MENU HAMBURGUESA **********/
+
+
+/* *********** INICIO DE HEADER *********** */
 div.col-title{
 
     flex: 1 1 auto;
@@ -227,20 +230,21 @@ div.container{
     padding: 10px 0 5px 0;
     border-radius: 7px;
     border: 1px solid #ccc;
+    animation: aparecer 4s;
 
 }
-div.container a{
+/* div.container a{
 
     text-decoration: none;
     color: black;
 
-}
-div.container p{
+} */
+/* div.container p{
 
     /* margin-left: 10px; */
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;
 
-}
+} */
 
 /* SECCION - ARTICLE */
 
@@ -251,6 +255,7 @@ section article.nosotros{
     margin: auto;
     /* background-color: aqua; */
     color: brown;
+    animation: aparecer 4s;
 
 }
 
